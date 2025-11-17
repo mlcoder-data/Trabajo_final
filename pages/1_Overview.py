@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title("📌 Descripción general y preguntas de negocio")
+st.title("📌 Descripción general")
 
 @st.cache_data
 def load_data():
@@ -12,10 +12,10 @@ def load_data():
 
 mat, doc, sup = load_data()
 
-# ========= CÁLCULOS BASE =========
-mat["es_desercion_o_reprob"] = mat["estado_academico"].isin(["Cancelado", "Reprobado"])
+# ================== CÁLCULOS PRINCIPALES ==================
 mat["es_desercion"] = mat["estado_academico"] == "Cancelado"
 mat["es_reprob"] = mat["estado_academico"] == "Reprobado"
+mat["es_desercion_o_reprob"] = mat["es_desercion"] | mat["es_reprob"]
 
 total_estudiantes = mat["id_estudiante"].nunique()
 total_matriculas = len(mat)
@@ -28,184 +28,165 @@ tasa_desercion_global = mat["es_desercion"].mean() * 100
 tasa_reprob_global = mat["es_reprob"].mean() * 100
 nota_prom_global = mat["nota_final"].mean()
 
-# Programas con mayor deserción+reprobación
+# Top 3 programas en riesgo (deserción + reprobación)
 prog_agg = (
     mat.groupby("programa")
     .agg(
         estudiantes=("id_estudiante", "nunique"),
         desertores=("es_desercion_o_reprob", "sum"),
         cancelados=("es_desercion", "sum"),
-        reprobados=("es_reprob", "sum")
+        reprobados=("es_reprob", "sum"),
     )
 )
-prog_agg["tasa_desercion_reprob"] = prog_agg["desertores"] / prog_agg["estudiantes"] * 100
+prog_agg["tasa_desercion_reprob"] = (
+    prog_agg["desertores"] / prog_agg["estudiantes"] * 100
+)
 top_prog_riesgo = (
     prog_agg.sort_values("tasa_desercion_reprob", ascending=False)
     .head(3)
     .reset_index()
 )
 
-# ========= LAYOUT DE KPIs (COLUMNAS CON COLOR) =========
-st.markdown("### 🧮 Panorama general de la operación virtual 2024-1 / 2024-2")
-
-kpi1, kpi2, kpi3, kpi4 = st.columns(4)
-
-with kpi1:
-    st.markdown(
-        f"""
-        <div style="background:#0f172a;padding:16px;border-radius:12px;border:1px solid #1f2937;">
-        <div style="color:#9ca3af;font-size:13px;">Estudiantes únicos</div>
-        <div style="font-size:26px;font-weight:700;margin-top:4px;">{total_estudiantes}</div>
-        <div style="color:#6b7280;font-size:12px;margin-top:6px;">En todos los programas virtuales</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-with kpi2:
-    st.markdown(
-        f"""
-        <div style="background:#0f172a;padding:16px;border-radius:12px;border:1px solid #1f2937;">
-        <div style="color:#9ca3af;font-size:13px;">Matrículas registradas</div>
-        <div style="font-size:26px;font-weight:700;margin-top:4px;">{total_matriculas}</div>
-        <div style="color:#6b7280;font-size:12px;margin-top:6px;">Incluye repeticiones de estudiante por curso</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-with kpi3:
-    st.markdown(
-        f"""
-        <div style="background:#0f172a;padding:16px;border-radius:12px;border:1px solid #1f2937;">
-        <div style="color:#9ca3af;font-size:13px;">Tasa global de deserción</div>
-        <div style="font-size:26px;font-weight:700;margin-top:4px;">{tasa_desercion_global:.1f}%</div>
-        <div style="color:#6b7280;font-size:12px;margin-top:6px;">Matrículas con estado "Cancelado"</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-with kpi4:
-    st.markdown(
-        f"""
-        <div style="background:#0f172a;padding:16px;border-radius:12px;border:1px solid #1f2937;">
-        <div style="color:#9ca3af;font-size:13px;">Tasa global de reprobación</div>
-        <div style="font-size:26px;font-weight:700;margin-top:4px;">{tasa_reprob_global:.1f}%</div>
-        <div style="color:#6b7280;font-size:12px;margin-top:6px;">Matrículas con estado "Reprobado"</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
+# ================== SUBTÍTULO ==================
 st.markdown(
-    f"""
-    > La nota final promedio de todos los cursos es de **{nota_prom_global:.2f}**  
-    > y se registran **{total_cursos} cursos virtuales**, atendidos por **{total_docentes} docentes**  
-    > y respaldados por **{total_casos_soporte} casos de soporte registrados**.
-    """
+    "Esta vista resume el estado general de la operación virtual y conecta el tablero "
+    "con las preguntas de negocio definidas por la UEV y DATA DAMZ SAS."
 )
 
-# ========= BLOQUE P1: Programas en mayor riesgo =========
+st.markdown("")
+
+# ================== KPIs EN CARDS (MISMO ESTILO QUE app.py) ==================
+col1, col2, col3, col4 = st.columns(4)
+
+card_1 = (
+    '<div style="background:#020617; border-radius:16px; padding:16px 18px; '
+    'border:1px solid #1f2937;">'
+        '<div style="font-size:13px; color:#9ca3af;">Estudiantes únicos</div>'
+        f'<div style="font-size:26px; font-weight:700; color:#e5e7eb; margin-top:4px;">{total_estudiantes}</div>'
+        '<div style="font-size:12px; color:#6b7280; margin-top:6px;">'
+            'En todos los programas con matrícula virtual'
+        '</div>'
+    '</div>'
+)
+
+card_2 = (
+    '<div style="background:#020617; border-radius:16px; padding:16px 18px; '
+    'border:1px solid #1f2937;">'
+        '<div style="font-size:13px; color:#9ca3af;">Matrículas registradas</div>'
+        f'<div style="font-size:26px; font-weight:700; color:#e5e7eb; margin-top:4px;">{total_matriculas}</div>'
+        '<div style="font-size:12px; color:#6b7280; margin-top:6px;">'
+            'Incluye estudiantes que cursan más de una asignatura'
+        '</div>'
+    '</div>'
+)
+
+card_3 = (
+    '<div style="background:#020617; border-radius:16px; padding:16px 18px; '
+    'border:1px solid #1f2937;">'
+        '<div style="font-size:13px; color:#9ca3af;">Tasa global de deserción</div>'
+        f'<div style="font-size:26px; font-weight:700; color:#f97373; margin-top:4px;">{tasa_desercion_global:.1f}%</div>'
+        '<div style="font-size:12px; color:#6b7280; margin-top:6px;">'
+            'Porcentaje de matrículas con estado "Cancelado"'
+        '</div>'
+    '</div>'
+)
+
+card_4 = (
+    '<div style="background:#020617; border-radius:16px; padding:16px 18px; '
+    'border:1px solid #1f2937;">'
+        '<div style="font-size:13px; color:#9ca3af;">Tasa global de reprobación</div>'
+        f'<div style="font-size:26px; font-weight:700; color:#facc15; margin-top:4px;">{tasa_reprob_global:.1f}%</div>'
+        '<div style="font-size:12px; color:#6b7280; margin-top:6px;">'
+            'Porcentaje de matrículas con estado "Reprobado"'
+        '</div>'
+    '</div>'
+)
+
+with col1:
+    st.markdown(card_1, unsafe_allow_html=True)
+with col2:
+    st.markdown(card_2, unsafe_allow_html=True)
+with col3:
+    st.markdown(card_3, unsafe_allow_html=True)
+with col4:
+    st.markdown(card_4, unsafe_allow_html=True)
+
+st.markdown(
+    f"> La nota final promedio de todos los cursos es de **{nota_prom_global:.2f}**. "
+    f"El sistema cuenta con **{total_cursos} cursos virtuales**, atendidos por "
+    f"**{total_docentes} docentes** y respaldados por **{total_casos_soporte} casos de soporte registrados**."
+)
+
+# ================== TOP PROGRAMAS EN RIESGO (PREGUNTA FOCAL) ==================
 st.markdown("---")
-st.markdown("### P1. ¿Qué programas presentan mayor deserción, reprobación o cancelación?")
+st.markdown("### Programas con mayor riesgo de deserción y reprobación")
 
 st.markdown(
-    """
-    Para esta pregunta se calculó, por programa:
-
-    - Número de estudiantes únicos.
-    - Cuántos de ellos tuvieron al menos una matrícula **cancelada o reprobada**.
-    - La **tasa de deserción+reprobación** = desertores / estudiantes.
-    """
+    "A continuación se muestran los programas con mayor **tasa combinada de deserción y reprobación**. "
+    "Esta tabla sirve como punto de partida para la pregunta focal del proyecto."
 )
 
-st.markdown("**Top 3 programas con mayor tasa de deserción + reprobación:**")
-
-st.dataframe(
-    top_prog_riesgo.rename(
+if not top_prog_riesgo.empty:
+    tabla_prog = top_prog_riesgo.rename(
         columns={
             "programa": "Programa",
             "estudiantes": "Estudiantes únicos",
-            "desertores": "Estudiantes con cancelación/reprobación",
+            "desertores": "Con cancelación o reprobación",
             "cancelados": "Cancelados",
             "reprobados": "Reprobados",
             "tasa_desercion_reprob": "Tasa deserción+reprob (%)",
         }
-    ),
-    use_container_width=True
-)
+    )
+    st.dataframe(tabla_prog, use_container_width=True)
+else:
+    st.info("No se encontraron programas con registros suficientes para este cálculo.")
 
 st.markdown(
-    """
-    👉 En la exposición puedes comentar que estos programas requieren **seguimiento prioritario**,  
-    y luego profundizar en la página de **Matrículas y Desempeño** para ver qué asignaturas 
-    específicas explican estas tasas.
-    """
+    "Desde la perspectiva de DATA DAMZ SAS y la UEV-ITM, estos programas deben ser considerados "
+    "**prioritarios para el diseño de estrategias de acompañamiento**, revisión de contenidos y "
+    "ajustes en la oferta virtual."
 )
 
-# ========= BLOQUE P2–P5: RESUMEN NARRATIVO =========
+# ================== RELACIÓN CON LAS PREGUNTAS DE NEGOCIO ==================
 st.markdown("---")
-st.markdown("### 🎯 Relación con las demás preguntas de negocio")
+st.markdown("### Cómo se conectan las demás páginas con las preguntas de negocio")
 
-col_p_izq, col_p_der = st.columns(2)
+col_left, col_right = st.columns(2)
 
-with col_p_izq:
-    st.markdown("#### P2. Rendimiento vs carga docente")
+with col_left:
+    st.markdown("#### P2. Rendimiento vs. carga docente")
     st.markdown(
-        """
-        - En la página **Docentes y Cursos** se calcula, por curso y docente:
-          - Tamaño de grupo (n° estudiantes por curso).
-          - Promedio de nota por curso/docente.
-        - Con esto se observa si grupos más grandes tienden a tener **menores notas promedio**
-          o más reprobación.
-        """
+        "- En la página **Docentes y Cursos** analizamos el tamaño de grupo, la carga docente y la nota "
+        "promedio por curso.\n"
+        "- Esto permite identificar si los cursos con mayor número de estudiantes presentan mayores niveles "
+        "de reprobación o resultados más bajos."
     )
 
     st.markdown("#### P3. Problemas de soporte y riesgo de deserción")
     st.markdown(
-        """
-        - La página **Soporte y Atenciones** muestra:
-          - Frecuencia de cada **motivo** de atención.
-          - Distribución por **tipo de atención**.
-        - Además, se integran los datos de matrículas y soporte por **semestre–facultad–programa**
-          para ver si los programas con más casos de soporte también presentan **mayor tasa de deserción**.
-        """
+        "- En **Soporte y Atenciones** se clasifican los casos según su motivo y tipo de atención.\n"
+        "- Al cruzar esta información con las tasas de deserción, podemos ver si los programas con más "
+        "incidencias de soporte tienden a registrar también mayor abandono."
     )
 
-with col_p_der:
+with col_right:
     st.markdown("#### P4. Segmentos con mayor propensión al abandono")
     st.markdown(
-        """
-        - Con la información disponible, los segmentos más claros son:
-          - **Programa** y **facultad**.
-          - **Modalidad** (AMV / APV).
-          - **Subperiodo** (A, B, C).
-        - En **Matrículas y Desempeño** podrás filtrar por estos campos y comparar
-          tasas de deserción y reprobación entre segmentos.
-        """
+        "- A partir de los filtros por **programa, facultad, modalidad y subperiodo**, la página de "
+        "**Matrículas y Desempeño** permite ubicar los segmentos con mayores tasas de cancelación y reprobación.\n"
+        "- Esto aporta una base objetiva para focalizar intervenciones."
     )
 
     st.markdown("#### P5. Impacto del tiempo de respuesta del soporte")
     st.markdown(
-        """
-        - Se agrupan los datos por **semestre–facultad–programa**, calculando:
-          - Tasa de deserción.
-          - Tiempo de respuesta promedio.
-          - Satisfacción promedio.
-        - En **Soporte y Atenciones** se muestra un gráfico de dispersión para ver
-          si los programas con **tiempos de respuesta más altos** tienden a mostrar
-          **mayor deserción** (o si no hay una relación fuerte).
-        """
+        "- La vista de **Soporte y Atenciones** incorpora el tiempo de respuesta y la satisfacción del estudiante.\n"
+        "- Al relacionar estos indicadores con la deserción por programa y semestre, podemos evaluar si los "
+        "tiempos de respuesta están influyendo en la permanencia."
     )
 
 st.markdown("---")
 st.markdown(
-    """
-    Con esta página de **Descripción general** tienes:
-
-    - Los **KPIs clave** para abrir la presentación.
-    - Un **top de programas en mayor riesgo**, directamente conectado con la pregunta focal.
-    - Un mapa claro de **qué página del dashboard responde cada pregunta P1–P5**.
-    """
+    "En síntesis, esta página de **Descripción general** entrega una visión ejecutiva de la operación virtual y "
+    "explica cómo cada sección del tablero aporta evidencia para responder la pregunta focal definida por la UEV "
+    "y DATA DAMZ SAS."
 )

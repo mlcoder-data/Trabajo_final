@@ -12,61 +12,122 @@ def load_data():
 
 mat, doc = load_data()
 
-# Enlace con nombre de curso
-mat_doc = mat.merge(doc[["id_curso", "nombre_curso", "id_docente"]], on="id_curso", how="left")
+# Unimos info de matrícula + curso/docente
+df = mat.merge(
+    doc[["id_curso", "nombre_curso", "id_docente", "facultad", "programa"]],
+    on=["id_curso", "facultad", "programa"],
+    how="left"
+)
 
-mat_doc["es_desercion"] = mat_doc["estado_academico"] == "Cancelado"
-mat_doc["es_reprob"] = mat_doc["estado_academico"] == "Reprobado"
-mat_doc["es_desercion_o_reprob"] = mat_doc["es_desercion"] | mat_doc["es_reprob"]
+df["es_desercion"] = df["estado_academico"] == "Cancelado"
+df["es_reprob"] = df["estado_academico"] == "Reprobado"
+df["es_desercion_o_reprob"] = df["es_desercion"] | df["es_reprob"]
 
-# ========= FILTROS =========
-st.markdown("### Filtros")
+st.markdown(
+    "En esta vista analizamos el comportamiento de las matrículas por **programa, modalidad y asignatura**, "
+    "con énfasis en los estados académicos que están directamente relacionados con la deserción y el riesgo: "
+    "**cancelado** y **reprobado**. Desde DATA DAMZ SAS buscamos que esta sección sea el punto de partida para "
+    "identificar dónde se concentran los principales focos de alerta."
+)
 
-c1, c2, c3 = st.columns(3)
+# ================== FILTROS ==================
+st.markdown("### Filtros de análisis")
 
-semestres = sorted(mat_doc["semestre"].unique().tolist())
-facultades = sorted(mat_doc["facultad"].unique().tolist())
-modalidades = sorted(mat_doc["modalidad"].unique().tolist())
+c1, c2, c3, c4 = st.columns(4)
+
+semestres = sorted(df["semestre"].dropna().unique().tolist())
+facultades = sorted(df["facultad"].dropna().unique().tolist())
+programas = sorted(df["programa"].dropna().unique().tolist())
+modalidades = sorted(df["modalidad"].dropna().unique().tolist())
 
 sem_sel = c1.multiselect("Semestre", semestres, default=semestres)
 fac_sel = c2.multiselect("Facultad", facultades, default=facultades)
-mod_sel = c3.multiselect("Modalidad", modalidades, default=modalidades)
+prog_sel = c3.multiselect("Programa", programas, default=programas)
+mod_sel = c4.multiselect("Modalidad", modalidades, default=modalidades)
 
-df = mat_doc[
-    mat_doc["semestre"].isin(sem_sel)
-    & mat_doc["facultad"].isin(fac_sel)
-    & mat_doc["modalidad"].isin(mod_sel)
+df_f = df[
+    df["semestre"].isin(sem_sel)
+    & df["facultad"].isin(fac_sel)
+    & df["programa"].isin(prog_sel)
+    & df["modalidad"].isin(mod_sel)
 ]
 
-# ========= KPIs LOCALES =========
-st.markdown("### Resumen de matrículas filtradas")
+# ================== KPIs LOCALES ==================
+st.markdown("### Resumen de matrículas en los filtros seleccionados")
+
+total_matr = len(df_f)
+tasa_deserc = df_f["es_desercion"].mean() * 100 if total_matr > 0 else 0
+tasa_reprob = df_f["es_reprob"].mean() * 100 if total_matr > 0 else 0
+nota_prom = df_f["nota_final"].mean() if total_matr > 0 else 0
 
 k1, k2, k3, k4 = st.columns(4)
 
-total_matr = len(df)
-tasa_deserc = df["es_desercion"].mean() * 100 if total_matr > 0 else 0
-tasa_reprob = df["es_reprob"].mean() * 100 if total_matr > 0 else 0
-nota_prom = df["nota_final"].mean() if total_matr > 0 else 0
+card_m1 = (
+    '<div style="background:#020617; border-radius:16px; padding:16px 18px; '
+    'border:1px solid #1f2937;">'
+        '<div style="font-size:13px; color:#9ca3af;">Matrículas en el segmento</div>'
+        f'<div style="font-size:26px; font-weight:700; color:#e5e7eb; margin-top:4px;">{total_matr}</div>'
+        '<div style="font-size:12px; color:#6b7280; margin-top:6px;">'
+            'Total de registros que cumplen las condiciones de filtro actuales.'
+        '</div>'
+    '</div>'
+)
+
+card_m2 = (
+    '<div style="background:#020617; border-radius:16px; padding:16px 18px; '
+    'border:1px solid #1f2937;">'
+        '<div style="font-size:13px; color:#9ca3af;">Deserción (Cancelado)</div>'
+        f'<div style="font-size:26px; font-weight:700; color:#f97373; margin-top:4px;">{tasa_deserc:.1f}%</div>'
+        '<div style="font-size:12px; color:#6b7280; margin-top:6px;">'
+            'Proporción de matrículas con estado "Cancelado". Indica abandono formal del curso.'
+        '</div>'
+    '</div>'
+)
+
+card_m3 = (
+    '<div style="background:#020617; border-radius:16px; padding:16px 18px; '
+    'border:1px solid #1f2937;">'
+        '<div style="font-size:13px; color:#9ca3af;">Reprobación</div>'
+        f'<div style="font-size:26px; font-weight:700; color:#facc15; margin-top:4px;">{tasa_reprob:.1f}%</div>'
+        '<div style="font-size:12px; color:#6b7280; margin-top:6px;">'
+            'Porcentaje de matrículas que culminan en reprobación. Refleja dificultades académicas.'
+        '</div>'
+    '</div>'
+)
+
+card_m4 = (
+    '<div style="background:#020617; border-radius:16px; padding:16px 18px; '
+    'border:1px solid #1f2937;">'
+        '<div style="font-size:13px; color:#9ca3af;">Nota final promedio</div>'
+        f'<div style="font-size:26px; font-weight:700; color:#4ade80; margin-top:4px;">{nota_prom:.2f}</div>'
+        '<div style="font-size:12px; color:#6b7280; margin-top:6px;">'
+            'Indicador de desempeño global del segmento analizado.'
+        '</div>'
+    '</div>'
+)
 
 with k1:
-    st.metric("Matrículas", total_matr)
-
+    st.markdown(card_m1, unsafe_allow_html=True)
 with k2:
-    st.metric("Deserción (Cancelado)", f"{tasa_deserc:.1f}%")
-
+    st.markdown(card_m2, unsafe_allow_html=True)
 with k3:
-    st.metric("Reprobación", f"{tasa_reprob:.1f}%")
-
+    st.markdown(card_m3, unsafe_allow_html=True)
 with k4:
-    st.metric("Nota promedio", f"{nota_prom:.2f}")
+    st.markdown(card_m4, unsafe_allow_html=True)
 
-# ========= GRÁFICO 1: ESTADO POR PROGRAMA (RESPUESTA DIRECTA A P1) =========
+st.markdown(
+    "Estos cuatro indicadores permiten abrir la conversación con una lectura rápida del contexto: "
+    "volumen de matrículas, nivel de deserción, nivel de reprobación y rendimiento promedio en el "
+    "segmento seleccionado. Desde DATA DAMZ SAS sugerimos utilizar este bloque como introducción a la sección."
+)
+
+# ================== 1. ESTADOS POR PROGRAMA ==================
 st.markdown("---")
 st.markdown("### 1. Estados académicos por programa")
 
-if not df.empty:
+if not df_f.empty:
     estados_prog = (
-        df.groupby(["programa", "estado_academico"])
+        df_f.groupby(["programa", "estado_academico"])
         .size()
         .reset_index(name="n")
     )
@@ -77,57 +138,80 @@ if not df.empty:
         .encode(
             x=alt.X("programa:N", title="Programa", sort="-y"),
             y=alt.Y("n:Q", title="Número de matrículas"),
-            color=alt.Color("estado_academico:N", title="Estado"),
+            color=alt.Color("estado_academico:N", title="Estado académico"),
             tooltip=["programa", "estado_academico", "n"],
         )
     )
 
     st.altair_chart(chart_prog, use_container_width=True)
 
-    st.caption(
-        "Este gráfico permite ver rápidamente **qué programas concentran más reprobados y cancelados**."
+    st.markdown(
+        """
+        **Cómo leer este gráfico desde la perspectiva de gestión:**
+
+        - Cada barra representa un programa académico dentro de los filtros seleccionados.
+        - Los colores permiten comparar la proporción de **aprobados**, **reprobados** y **cancelados** en cada programa.
+        - Un programa con barras altas en “Cancelado” o “Reprobado” indica un **riesgo académico** mayor.
+
+        Como DATA DAMZ SAS, recomendamos que en la presentación se destaquen aquellos programas donde la franja
+        de “Cancelado” y “Reprobado” es más visible, ya que allí se encuentran las principales oportunidades de
+        intervención (acompañamiento, rediseño curricular, refuerzo docente, etc.).
+        """
     )
 else:
-    st.info("No hay datos para los filtros seleccionados.")
+    st.info("No hay registros para los filtros seleccionados.")
 
-# ========= TABLA: INDICADORES POR PROGRAMA =========
+# ================== 2. INDICADORES POR PROGRAMA ==================
 st.markdown("### 2. Indicadores de deserción y reprobación por programa")
 
-if not df.empty:
+if not df_f.empty:
     prog_ind = (
-        df.groupby("programa")
+        df_f.groupby("programa")
         .agg(
-            matrículas=("id_estudiante", "count"),
+            matriculas=("id_estudiante", "count"),
             deserciones=("es_desercion", "sum"),
             reprobaciones=("es_reprob", "sum"),
         )
     )
-    prog_ind["tasa_desercion_%"] = prog_ind["deserciones"] / prog_ind["matrículas"] * 100
-    prog_ind["tasa_reprob_%"] = prog_ind["reprobaciones"] / prog_ind["matrículas"] * 100
+    prog_ind["tasa_desercion_%"] = prog_ind["deserciones"] / prog_ind["matriculas"] * 100
+    prog_ind["tasa_reprob_%"] = prog_ind["reprobaciones"] / prog_ind["matriculas"] * 100
     prog_ind = prog_ind.sort_values("tasa_desercion_%", ascending=False)
 
     st.dataframe(prog_ind, use_container_width=True)
 
-    st.caption(
-        "Ordenado de mayor a menor tasa de deserción: aquí identificas los **programas críticos** para la pregunta focal."
+    st.markdown(
+        """
+        Esta tabla complementa el gráfico anterior con una **lectura numérica precisa** por programa:
+
+        - `matriculas`: volumen total de matrículas analizadas en el programa.
+        - `deserciones`: cuántas de esas matrículas terminaron con estado “Cancelado”.
+        - `reprobaciones`: cuántas terminaron en “Reprobado”.
+        - `tasa_desercion_%` y `tasa_reprob_%`: indicadores porcentuales que facilitan la comparación entre programas,
+          independientemente del tamaño de cada uno.
+
+        En el diálogo con las directivas, esta tabla permite responder con precisión a preguntas como:
+        *“¿qué tan grave es el problema en cada programa?”* y *“¿qué programas deberían priorizarse en un plan de acción?”*.
+        """
     )
+else:
+    st.info("No hay registros para los filtros seleccionados.")
 
-# ========= GRÁFICO 2: ASIGNATURAS (CURSOS) EN MAYOR RIESGO =========
+# ================== 3. ASIGNATURAS EN MAYOR RIESGO ==================
 st.markdown("---")
-st.markdown("### 3. Asignaturas con mayor deserción/reprobación")
+st.markdown("### 3. Asignaturas con mayor tasa de deserción / reprobación")
 
-if not df.empty:
+if not df_f.empty:
     curso_ind = (
-        df.groupby("nombre_curso")
+        df_f.groupby("nombre_curso")
         .agg(
-            matrículas=("id_estudiante", "count"),
+            matriculas=("id_estudiante", "count"),
             deserciones=("es_desercion", "sum"),
             reprobaciones=("es_reprob", "sum"),
         )
         .reset_index()
     )
-    curso_ind["tasa_desercion_%"] = curso_ind["deserciones"] / curso_ind["matrículas"] * 100
-    curso_ind["tasa_reprob_%"] = curso_ind["reprobaciones"] / curso_ind["matrículas"] * 100
+    curso_ind["tasa_desercion_%"] = curso_ind["deserciones"] / curso_ind["matriculas"] * 100
+    curso_ind["tasa_reprob_%"] = curso_ind["reprobaciones"] / curso_ind["matriculas"] * 100
 
     top_cursos = curso_ind.sort_values("tasa_desercion_%", ascending=False).head(10)
 
@@ -139,7 +223,7 @@ if not df.empty:
             y=alt.Y("tasa_desercion_%:Q", title="Tasa de deserción (%)"),
             tooltip=[
                 "nombre_curso",
-                "matrículas",
+                "matriculas",
                 "deserciones",
                 "reprobaciones",
                 "tasa_desercion_%",
@@ -150,24 +234,38 @@ if not df.empty:
 
     st.altair_chart(chart_cursos, use_container_width=True)
 
-    st.caption(
-        "Estas son las **asignaturas con mayor tasa de cancelación**. Puedes mencionar ejemplos específicos en la exposición."
+    st.markdown(
+        """
+        En este gráfico nos enfocamos en el **nivel de asignatura**:
+
+        - Se listan las 10 asignaturas con mayor tasa de deserción dentro de los filtros aplicados.
+        - Cada barra muestra el porcentaje de matrículas canceladas sobre el total de matrículas de esa asignatura.
+        - Adicionalmente, el tooltip permite ver cuántos estudiantes estuvieron inscritos, cuántos desertaron y cuántos reprobaron.
+
+        Desde DATA DAMZ SAS sugerimos utilizar esta vista para identificar cursos "críticos" donde puede ser necesario:
+
+        - Revisar la carga de trabajo y la estructura del curso.
+        - Fortalecer el acompañamiento docente o las tutorías.
+        - Coordinar acciones específicas entre la UEV y los programas responsables.
+        """
     )
+else:
+    st.info("No hay registros para los filtros seleccionados.")
 
-# ========= GRÁFICO 3: SEGMENTOS (MODALIDAD / SUBPERIODO) PARA P4 =========
+# ================== 4. SEGMENTOS (MODALIDAD Y SUBPERIODO) ==================
 st.markdown("---")
-st.markdown("### 4. Segmentos de mayor riesgo (modalidad y subperiodo)")
+st.markdown("### 4. Segmentos con mayor riesgo (modalidad y subperiodo)")
 
-if not df.empty:
+if not df_f.empty:
     seg = (
-        df.groupby(["modalidad", "subperiodo"])
+        df_f.groupby(["modalidad", "subperiodo"])
         .agg(
-            matrículas=("id_estudiante", "count"),
+            matriculas=("id_estudiante", "count"),
             deserciones=("es_desercion_o_reprob", "sum"),
         )
         .reset_index()
     )
-    seg["tasa_desercion_reprob_%"] = seg["deserciones"] / seg["matrículas"] * 100
+    seg["tasa_desercion_reprob_%"] = seg["deserciones"] / seg["matriculas"] * 100
 
     chart_seg = (
         alt.Chart(seg)
@@ -179,7 +277,7 @@ if not df.empty:
             tooltip=[
                 "modalidad",
                 "subperiodo",
-                "matrículas",
+                "matriculas",
                 "deserciones",
                 "tasa_desercion_reprob_%",
             ],
@@ -188,6 +286,16 @@ if not df.empty:
 
     st.altair_chart(chart_seg, use_container_width=True)
 
-    st.caption(
-        "Aquí analizas **segmentos de estudiantes** por modalidad y subperiodo, para conectar con la P4."
+    st.markdown(
+        """
+        Este análisis por **modalidad (AMV/APV)** y **subperiodo** permite entender si el riesgo está asociado a:
+
+        - La forma en que se oferta la asignatura (por ejemplo, si alguna modalidad concentra más cancelaciones).
+        - Momentos específicos del calendario académico (subperiodos con mayor presión o acumulación de actividades).
+
+        Este tipo de segmentación complementa el análisis por programa y asignatura y ayuda a la UEV-ITM a decidir
+        si las acciones deben ser únicamente académicas o también **operativas y de calendario**.
+        """
     )
+else:
+    st.info("No hay registros para los filtros seleccionados.")
