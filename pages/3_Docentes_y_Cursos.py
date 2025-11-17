@@ -2,8 +2,36 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-st.title("👩‍🏫 Docentes y Cursos Virtuales")
+# ================== HEADER CORPORATIVO ==================
+def header_data_damz():
+    header_html = (
+        '<div style="background: linear-gradient(90deg,#0f172a,#1e293b,#1e3a5f);'
+        'padding: 26px 32px; border-radius: 0 0 22px 22px; border-bottom: 1px solid #111827;'
+        'margin-bottom: 38px; display:flex; justify-content:space-between; align-items:center;'
+        'box-shadow: 0 12px 28px rgba(0,0,0,0.35);">'
+            '<div style="flex:1;">'
+                '<div style="font-size:28px; font-weight:900; letter-spacing:0.08em; '
+                'text-transform:uppercase; color:#bfdbfe;">'
+                    'DATA DAMZ SAS'
+                '</div>'
+                '<div style="font-size:18px; color:#e5e7eb; margin-top:6px; font-weight:300;">'
+                    'Transformamos datos en decisiones para la educación virtual.'
+                '</div>'
+            '</div>'
+            '<div style="flex:1; text-align:right;">'
+                '<div style="font-size:17px; color:#cbd5e1; font-weight:400;">'
+                    'Proyecto analítico · Unidad de Educación Virtual – ITM'
+                '</div>'
+                '<div style="font-size:16px; color:#94a3b8; margin-top:4px;">'
+                    'Periodo de análisis: <b>2024-1 y 2024-2</b>'
+                '</div>'
+            '</div>'
+        '</div>'
+    )
+    st.markdown(header_html, unsafe_allow_html=True)
 
+
+# ================== CARGA DE DATOS ==================
 @st.cache_data
 def load_data():
     mat = pd.read_csv("matriculaslimpias.csv")
@@ -12,127 +40,167 @@ def load_data():
 
 mat, doc = load_data()
 
-# ===================== PREPARACIÓN =====================
-# Unimos matrícula + info del curso y docente
-df = mat.merge(
-    doc,
-    on=["id_curso", "semestre", "facultad", "programa"],
-    how="left"
-)
+# Unimos matrículas con información del curso y del docente
+# -> mantenemos los nombres de las columnas de matrícula SIN sufijos
+# -> las columnas que se repitan en docentes tendrán el sufijo "_doc"
+df = mat.merge(doc, on="id_curso", how="left", suffixes=("", "_doc"))
 
 df["es_reprobado"] = df["estado_academico"] == "Reprobado"
 df["es_cancelado"] = df["estado_academico"] == "Cancelado"
 
-# Filtros
-st.markdown("### Filtros")
+# ================== HEADER + TÍTULO ==================
+header_data_damz()
 
-c1, c2 = st.columns(2)
+st.title("👩‍🏫 Docentes y Cursos Virtuales")
+
+st.markdown(
+    "En esta sección analizamos la relación entre **carga docente** y **resultados académicos**. "
+    "Como DATA DAMZ SAS, nuestro objetivo es ofrecer a la UEV-ITM evidencia para responder a la pregunta: "
+    "_¿cómo influyen el tamaño de grupo, la experiencia docente y la oferta de cursos en el rendimiento y la deserción?_"
+)
+
+# ================== FILTROS ==================
+st.markdown("### Filtros de análisis")
+
+c1, c2, c3 = st.columns(3)
 
 semestres = sorted(df["semestre"].dropna().unique().tolist())
 facultades = sorted(df["facultad"].dropna().unique().tolist())
+programas = sorted(df["programa"].dropna().unique().tolist())
 
 sem_sel = c1.multiselect("Semestre", semestres, default=semestres)
 fac_sel = c2.multiselect("Facultad", facultades, default=facultades)
+prog_sel = c3.multiselect("Programa", programas, default=programas)
 
-df_f = df[df["semestre"].isin(sem_sel) & df["facultad"].isin(fac_sel)]
+df_f = df[
+    df["semestre"].isin(sem_sel)
+    & df["facultad"].isin(fac_sel)
+    & df["programa"].isin(prog_sel)
+]
 
-# Agregamos por curso–docente (tamaño de grupo y rendimiento)
-curso_doc = (
-    df_f.groupby(
-        ["id_curso", "nombre_curso", "id_docente",
-         "facultad", "programa", "antiguedad_docente_semestres"],
-        as_index=False
+# ================== AGREGACIONES ==================
+# Por curso-docente: tamaño de grupo, nota promedio, tasas
+if not df_f.empty:
+    curso_doc = (
+        df_f.groupby(
+            [
+                "id_curso",
+                "nombre_curso",
+                "id_docente",
+                "facultad",
+                "programa",
+                "antiguedad_docente_semestres",  # viene del CSV de docentes
+            ],
+            as_index=False,
+        )
+        .agg(
+            estudiantes=("id_estudiante", "nunique"),
+            nota_promedio=("nota_final", "mean"),
+            tasa_reprobacion=("es_reprobado", "mean"),
+            tasa_desercion=("es_cancelado", "mean"),
+        )
     )
-    .agg(
-        estudiantes=("id_estudiante", "nunique"),
-        nota_promedio=("nota_final", "mean"),
-        tasa_reprobacion=("es_reprobado", "mean"),
-        tasa_desercion=("es_cancelado", "mean"),
-    )
-)
-
-if not curso_doc.empty:
     curso_doc["tasa_reprobacion"] *= 100
     curso_doc["tasa_desercion"] *= 100
+else:
+    curso_doc = pd.DataFrame()
 
-# ===================== KPIs (P2) =====================
-st.markdown("### 🧮 Resumen de carga y rendimiento")
+# Por docente: consolidado de cursos, estudiantes y resultados
+if not df_f.empty:
+    doc_agg = (
+        df_f.groupby(
+            ["id_docente", "facultad", "antiguedad_docente_semestres"],
+            as_index=False,
+        )
+        .agg(
+            cursos=("id_curso", "nunique"),
+            estudiantes=("id_estudiante", "nunique"),
+            nota_promedio=("nota_final", "mean"),
+            tasa_reprobacion=("es_reprobado", "mean"),
+            tasa_desercion=("es_cancelado", "mean"),
+        )
+    )
+    doc_agg["tasa_reprobacion"] *= 100
+    doc_agg["tasa_desercion"] *= 100
+else:
+    doc_agg = pd.DataFrame()
 
-k1, k2, k3, k4 = st.columns(4)
+# ================== KPIs ==================
+st.markdown("### Resumen de carga y desempeño")
 
 if not curso_doc.empty:
     prom_tam_grupo = curso_doc["estudiantes"].mean()
     prom_nota = curso_doc["nota_promedio"].mean()
     prom_reprob = curso_doc["tasa_reprobacion"].mean()
     prom_deser = curso_doc["tasa_desercion"].mean()
+    n_cursos = len(curso_doc)
+    n_docentes = curso_doc["id_docente"].nunique()
 else:
     prom_tam_grupo = prom_nota = prom_reprob = prom_deser = 0
+    n_cursos = n_docentes = 0
 
-with k1:
-    st.markdown(
-        f"""
-        <div style="background:#0f172a;padding:16px;border-radius:12px;border:1px solid #1f2937;">
-        <div style="color:#9ca3af;font-size:13px;">Cursos analizados</div>
-        <div style="font-size:26px;font-weight:700;margin-top:4px;">{len(curso_doc)}</div>
-        <div style="color:#6b7280;font-size:12px;margin-top:6px;">Cursos virtuales con matrícula en los filtros</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+k1, k2, k3, k4 = st.columns(4)
 
-with k2:
-    st.markdown(
-        f"""
-        <div style="background:#0f172a;padding:16px;border-radius:12px;border:1px solid #1f2937;">
-        <div style="color:#9ca3af;font-size:13px;">Tamaño promedio de grupo</div>
-        <div style="font-size:26px;font-weight:700;margin-top:4px;">{prom_tam_grupo:.1f}</div>
-        <div style="color:#6b7280;font-size:12px;margin-top:6px;">Estudiantes por curso</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-with k3:
-    st.markdown(
-        f"""
-        <div style="background:#0f172a;padding:16px;border-radius:12px;border:1px solid #1f2937;">
-        <div style="color:#9ca3af;font-size:13px;">Nota promedio</div>
-        <div style="font-size:26px;font-weight:700;margin-top:4px;">{prom_nota:.2f}</div>
-        <div style="color:#6b7280;font-size:12px;margin-top:6px;">Promedio general de los cursos</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-with k4:
-    st.markdown(
-        f"""
-        <div style="background:#0f172a;padding:16px;border-radius:12px;border:1px solid #1f2937;">
-        <div style="color:#9ca3af;font-size:13px;">Reprobación y deserción</div>
-        <div style="font-size:26px;font-weight:700;margin-top:4px;">{prom_reprob:.1f}% / {prom_deser:.1f}%</div>
-        <div style="color:#6b7280;font-size:12px;margin-top:6px;">Promedios por curso</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-st.markdown(
-    """
-    👉 Estos indicadores te permiten introducir la **P2**:  
-    _“¿Existen patrones entre el rendimiento académico y la carga docente (tamaño de grupo, número de estudiantes por docente)?”_
-    """
+card1 = (
+    '<div style="background:#020617; border-radius:16px; padding:16px 18px; '
+    'border:1px solid #1f2937;">'
+        '<div style="font-size:13px; color:#9ca3af;">Cursos virtuales analizados</div>'
+        f'<div style="font-size:26px; font-weight:700; color:#e5e7eb; margin-top:4px;">{n_cursos}</div>'
+        f'<div style="font-size:12px; color:#6b7280; margin-top:6px;">Dictados por {n_docentes} docentes.</div>'
+    '</div>'
 )
 
-# ===================== 1. Tamaño de grupo vs nota promedio =====================
+card2 = (
+    '<div style="background:#020617; border-radius:16px; padding:16px 18px; '
+    'border:1px solid #1f2937;">'
+        '<div style="font-size:13px; color:#9ca3af;">Tamaño promedio de grupo</div>'
+        f'<div style="font-size:26px; font-weight:700; color:#e5e7eb; margin-top:4px;">{prom_tam_grupo:.1f}</div>'
+        '<div style="font-size:12px; color:#6b7280; margin-top:6px;">Estudiantes por curso.</div>'
+    '</div>'
+)
+
+card3 = (
+    '<div style="background:#020617; border-radius:16px; padding:16px 18px; '
+    'border:1px solid #1f2937;">'
+        '<div style="font-size:13px; color:#9ca3af;">Nota promedio de los cursos</div>'
+        f'<div style="font-size:26px; font-weight:700; color:#4ade80; margin-top:4px;">{prom_nota:.2f}</div>'
+        '<div style="font-size:12px; color:#6b7280; margin-top:6px;">Promedio de nota final por curso.</div>'
+    '</div>'
+)
+
+card4 = (
+    '<div style="background:#020617; border-radius:16px; padding:16px 18px; '
+    'border:1px solid #1f2937;">'
+        '<div style="font-size:13px; color:#9ca3af;">Reprobación y deserción promedio</div>'
+        f'<div style="font-size:26px; font-weight:700; color:#f97373; margin-top:4px;">{prom_reprob:.1f}% / {prom_deser:.1f}%</div>'
+        '<div style="font-size:12px; color:#6b7280; margin-top:6px;">Promedio por curso (reprobado / cancelado).</div>'
+    '</div>'
+)
+
+with k1:
+    st.markdown(card1, unsafe_allow_html=True)
+with k2:
+    st.markdown(card2, unsafe_allow_html=True)
+with k3:
+    st.markdown(card3, unsafe_allow_html=True)
+with k4:
+    st.markdown(card4, unsafe_allow_html=True)
+
+st.markdown(
+    "Estos indicadores resumen la **escala de la operación docente** y el nivel general de rendimiento. "
+    "Son útiles para abrir la conversación sobre carga, tamaño de grupo y resultados académicos."
+)
+
+# ================== 1. TAMAÑO DE GRUPO VS NOTA (POR CURSO) ==================
 st.markdown("---")
-st.markdown("### 1. Tamaño de grupo vs rendimiento por curso (P2)")
+st.markdown("### 1. Tamaño de grupo vs. nota promedio por curso")
 
 if not curso_doc.empty:
     chart_carga = (
         alt.Chart(curso_doc)
         .mark_circle(size=80)
         .encode(
-            x=alt.X("estudiantes:Q", title="Tamaño de grupo (n° estudiantes)"),
+            x=alt.X("estudiantes:Q", title="Tamaño de grupo (número de estudiantes)"),
             y=alt.Y("nota_promedio:Q", title="Nota promedio del curso"),
             color=alt.Color("facultad:N", title="Facultad"),
             tooltip=[
@@ -147,44 +215,43 @@ if not curso_doc.empty:
             ],
         )
     )
+
     st.altair_chart(chart_carga, use_container_width=True)
 
-    st.caption(
-        "Cada punto es un curso. Con este gráfico puedes comentar si los **grupos más grandes** tienden a tener "
-        "notas promedio más bajas o si no se observa un patrón claro."
+    st.markdown(
+        """
+        **Cómo interpretar este gráfico:**
+
+        - Cada punto representa un **curso específico** (un docente dictando una asignatura).
+        - El eje X muestra el **tamaño de grupo** (número de estudiantes matriculados).
+        - El eje Y muestra la **nota promedio final** de ese curso.
+        - El color indica la **facultad**, lo que permite observar si hay patrones por unidad académica.
+
+        Este gráfico responde a la pregunta de si los cursos con grupos más numerosos tienden a obtener
+        resultados académicos más bajos. En la presentación se puede resaltar si se observa una tendencia
+        clara descendente o si el comportamiento es más disperso, indicando que el tamaño de grupo no es el
+        único factor determinante.
+        """
     )
 else:
-    st.info("No hay datos para los filtros seleccionados.")
+    st.info("No hay datos suficientes para construir este gráfico con los filtros seleccionados.")
 
-# ===================== 2. Antigüedad docente vs nota promedio =====================
-st.markdown("### 2. Antigüedad docente y resultados académicos")
+# ================== 2. ANTIGÜEDAD DOCENTE Y RESULTADOS ==================
+st.markdown("---")
+st.markdown("### 2. Antigüedad del docente y desempeño académico")
 
-if not df_f.empty:
-    # Agregamos por docente
-    doc_agg = (
-        df_f.groupby(
-            ["id_docente", "facultad", "programa", "antiguedad_docente_semestres"],
-            as_index=False
-        )
-        .agg(
-            cursos=("id_curso", "nunique"),
-            estudiantes=("id_estudiante", "nunique"),
-            nota_promedio=("nota_final", "mean"),
-            tasa_reprobacion=("es_reprobado", "mean"),
-            tasa_desercion=("es_cancelado", "mean"),
-        )
-    )
-    doc_agg["tasa_reprobacion"] *= 100
-    doc_agg["tasa_desercion"] *= 100
-
+if not doc_agg.empty:
     chart_ant = (
         alt.Chart(doc_agg)
-        .mark_circle(size=80)
+        .mark_circle(size=90)
         .encode(
-            x=alt.X("antiguedad_docente_semestres:Q", title="Antigüedad (semestres)"),
+            x=alt.X(
+                "antiguedad_docente_semestres:Q",
+                title="Antigüedad como docente virtual (semestres)"
+            ),
             y=alt.Y("nota_promedio:Q", title="Nota promedio del docente"),
+            size=alt.Size("cursos:Q", title="Número de cursos dictados"),
             color=alt.Color("facultad:N", title="Facultad"),
-            size=alt.Size("cursos:Q", title="N° cursos dictados"),
             tooltip=[
                 "id_docente",
                 "facultad",
@@ -199,13 +266,33 @@ if not df_f.empty:
 
     st.altair_chart(chart_ant, use_container_width=True)
 
-    st.caption(
-        "Aquí puedes analizar si los **docentes con más antigüedad** concentran mejores resultados "
-        "o si la brecha no es tan fuerte."
+    st.markdown(
+        """
+        **Lectura sugerida para este gráfico:**
+
+        - Cada punto es un **docente**.
+        - En el eje X se observa la **antigüedad** del docente en semestres.
+        - En el eje Y, la **nota promedio** de todos sus cursos.
+        - El tamaño del círculo indica cuántos **cursos ha dictado** (mayor tamaño = más carga).
+        - El color diferencia las facultades.
+
+        Esta visualización ayuda a explorar si la **experiencia docente** está asociada con mejores resultados
+        (por ejemplo, si los docentes con más semestres tienden a concentrarse en la parte superior del gráfico),
+        o si los resultados son similares independientemente de la antigüedad.
+
+        En la conversación con las directivas, permite discutir temas como:
+        - Necesidad de programas de **formación docente** para quienes están iniciando.
+        - Reconocimiento de docentes con desempeño sostenido en el tiempo.
+        """
     )
+else:
+    st.info("No hay datos suficientes para analizar la antigüedad docente con los filtros seleccionados.")
 
-    st.markdown("### 3. Docentes con mayores tasas de reprobación/deserción")
+# ================== 3. DOCENTES CON MAYOR REPROBACIÓN / DESERCIÓN ==================
+st.markdown("---")
+st.markdown("### 3. Docentes con mayores tasas de reprobación y deserción")
 
+if not doc_agg.empty:
     top_doc = (
         doc_agg.sort_values("tasa_reprobacion", ascending=False)
         .head(10)
@@ -217,7 +304,6 @@ if not df_f.empty:
             [
                 "id_docente",
                 "facultad",
-                "programa",
                 "cursos",
                 "estudiantes",
                 "nota_promedio",
@@ -228,9 +314,19 @@ if not df_f.empty:
         use_container_width=True,
     )
 
-    st.caption(
-        "Esta tabla no es para ‘señalar’ docentes en público, pero sí para mostrar a las directivas que el "
-        "dashboard permite identificar **focos específicos de acompañamiento**."
+    st.markdown(
+        """
+        Esta tabla no busca señalar personas, sino identificar **patrones de riesgo** asociados a la práctica docente:
+
+        - Se listan los 10 docentes con mayor **tasa de reprobación** promedio en sus cursos.
+        - También se incluye la **tasa de deserción**, el número de cursos dictados y el número de estudiantes atendidos.
+        - Es un insumo para que la UEV-ITM pueda **ofrecer acompañamiento pedagógico** o revisar condiciones
+          particulares de los cursos a cargo de estos docentes (complejidad de contenidos, tipo de estudiantes,
+          modalidad, etc.).
+
+        Como DATA DAMZ SAS, recomendamos tratar esta tabla como una herramienta interna de gestión académica,
+        y no como un elemento de exposición pública con nombres propios.
+        """
     )
 else:
-    st.info("No hay datos para los filtros seleccionados.")
+    st.info("No hay información suficiente para construir esta tabla con los filtros actuales.")
