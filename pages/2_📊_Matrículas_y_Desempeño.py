@@ -31,6 +31,8 @@ def header_data_damz():
     st.markdown(header_html, unsafe_allow_html=True)
 
 header_data_damz()
+
+# ================== TÍTULO PRINCIPAL ==================
 st.title("🎓 Matrículas y Desempeño Académico")
 
 @st.cache_data

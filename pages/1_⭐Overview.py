@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 
+
 # ================== HEADER CORPORATIVO ==================
 def header_data_damz():
     header_html = (
