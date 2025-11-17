@@ -330,3 +330,14 @@ if not doc_agg.empty:
     )
 else:
     st.info("No hay información suficiente para construir esta tabla con los filtros actuales.")
+
+st.markdown(
+    """
+    <hr style="margin-top:40px; margin-bottom:10px; border: 1px solid #1e293b;">
+    <p style="text-align:center; color:#64748b; font-size:13px;">
+        Desarrollado por:<br>
+        <b>Andrés Zapata Calle · Mateo Lozano Palacio · Zamir Bustamante Ruiz · Darwin Agudelo Deossa</b>
+    </p>
+    """,
+    unsafe_allow_html=True
+)

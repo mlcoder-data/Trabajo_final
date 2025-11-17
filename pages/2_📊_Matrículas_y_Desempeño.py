@@ -330,3 +330,14 @@ if not df_f.empty:
     )
 else:
     st.info("No hay registros para los filtros seleccionados.")
+
+st.markdown(
+    """
+    <hr style="margin-top:40px; margin-bottom:10px; border: 1px solid #1e293b;">
+    <p style="text-align:center; color:#64748b; font-size:13px;">
+        Desarrollado por:<br>
+        <b>Andrés Zapata Calle · Mateo Lozano Palacio · Zamir Bustamante Ruiz · Darwin Agudelo Deossa</b>
+    </p>
+    """,
+    unsafe_allow_html=True
+)
