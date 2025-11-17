@@ -1,0 +1,801 @@
+id_caso,fecha_solicitud,semestre,facultad,programa,motivo,tipo_atencion,tiempo_respuesta_horas,satisfaccion_estudiante,region
+CASO00001,08/11/2024,2024-2,Artes y Humanidades,Comunicación,Orientación de matrícula,Tutoría,0.6,5,Rionegro
+CASO00002,10/02/2024,2024-1,Artes y Humanidades,Comunicación,Dificultad académica,Tutoría,24.8,2,Itagüí
+CASO00003,07/03/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Problemas personales,Académica,36.5,5,Rionegro
+CASO00004,15/03/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Orientación de matrícula,Académica,26.2,2,Itagüí
+CASO00005,24/10/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Académica,24.3,5,Itagüí
+CASO00006,22/07/2024,2024-2,Artes y Humanidades,Comunicación,Orientación de matrícula,Académica,22.6,5,Itagüí
+CASO00007,30/11/2024,2024-2,Ingeniería,Ingeniería Electrónica,Problemas personales,Tutoría,55.0,4,Itagüí
+CASO00008,28/09/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Tutoría,22.6,5,Medellín
+CASO00009,11/08/2024,2024-2,Artes y Humanidades,Artes Escénicas,Dificultad académica,Psicosocial,0.5,5,Apartadó
+CASO00010,26/09/2024,2024-2,Ciencias Económicas,Economía,Orientación de matrícula,Tutoría,13.3,3,Rionegro
+CASO00011,23/09/2024,2024-2,Ingeniería,Ingeniería Mecánica,Dificultad académica,Académica,28.9,5,Medellín
+CASO00012,23/01/2024,2024-1,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Académica,35.0,5,Apartadó
+CASO00013,01/06/2024,2024-1,Ingeniería,Ingeniería Electrónica,Dificultad académica,Psicosocial,21.9,3,Rionegro
+CASO00014,11/04/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Tutoría,19.3,2,Rionegro
+CASO00015,24/09/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Tutoría,11.7,4,Apartadó
+CASO00016,04/10/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Psicosocial,7.2,3,Rionegro
+CASO00017,04/02/2024,2024-1,Artes y Humanidades,Comunicación,Acceso a plataforma,Mesa de ayuda,15.4,4,Medellín
+CASO00018,01/04/2024,2024-1,Ciencias Económicas,Economía,Orientación de matrícula,Tutoría,9.7,2,Medellín
+CASO00019,21/10/2024,2024-2,Ingeniería,Ingeniería Electrónica,Dificultad académica,Tutoría,23.5,4,Medellín
+CASO00020,02/08/2024,2024-2,Ciencias Económicas,Contaduría,Problemas personales,Mesa de ayuda,10.1,4,Rionegro
+CASO00021,08/12/2024,2024-2,Ciencias Económicas,Economía,Soporte técnico,Académica,20.2,2,Itagüí
+CASO00022,05/10/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Académica,22.5,2,Medellín
+CASO00023,28/01/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Orientación de matrícula,Académica,31.8,2,Apartadó
+CASO00024,29/10/2024,2024-2,Artes y Humanidades,Comunicación,Acceso a plataforma,Tutoría,45.6,3,Medellín
+CASO00025,07/05/2024,2024-1,Ingeniería,Ingeniería Electrónica,Problemas personales,Mesa de ayuda,47.9,5,Medellín
+CASO00026,08/06/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Tutoría,29.7,4,Medellín
+CASO00027,28/06/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Problemas personales,Mesa de ayuda,28.3,5,Apartadó
+CASO00028,14/12/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Académica,12.8,4,Rionegro
+CASO00029,07/03/2024,2024-1,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Psicosocial,48.8,4,Itagüí
+CASO00030,05/09/2024,2024-2,Ingeniería,Ingeniería Electrónica,Dificultad académica,Tutoría,13.8,2,Itagüí
+CASO00031,20/08/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Tutoría,41.2,2,Medellín
+CASO00032,08/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Tutoría,0.5,5,Itagüí
+CASO00033,23/03/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Psicosocial,12.4,2,Itagüí
+CASO00034,26/11/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Psicosocial,19.3,2,Apartadó
+CASO00035,19/02/2024,2024-1,Ciencias Económicas,Contaduría,Orientación de matrícula,Psicosocial,46.3,2,Itagüí
+CASO00036,29/01/2024,2024-1,Ingeniería,Ingeniería Mecánica,Dificultad académica,Tutoría,16.3,5,Itagüí
+CASO00037,30/10/2024,2024-2,Ciencias Económicas,Contaduría,Dificultad académica,Psicosocial,28.9,3,Medellín
+CASO00038,05/06/2024,2024-1,Ingeniería,Ingeniería Electrónica,Soporte técnico,Psicosocial,48.9,2,Itagüí
+CASO00039,13/12/2024,2024-2,Artes y Humanidades,Comunicación,Soporte técnico,Mesa de ayuda,7.9,3,Apartadó
+CASO00040,04/05/2024,2024-1,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Mesa de ayuda,20.4,2,Itagüí
+CASO00041,16/08/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Tutoría,38.6,3,Itagüí
+CASO00042,01/10/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Mesa de ayuda,16.8,4,Apartadó
+CASO00043,12/12/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Psicosocial,17.5,5,Itagüí
+CASO00044,11/12/2024,2024-2,Artes y Humanidades,Comunicación,Orientación de matrícula,Académica,45.3,5,Apartadó
+CASO00045,21/05/2024,2024-1,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Tutoría,10.3,5,Itagüí
+CASO00046,27/09/2024,2024-2,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Mesa de ayuda,28.8,4,Rionegro
+CASO00047,25/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Académica,16.4,4,Rionegro
+CASO00048,03/03/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Mesa de ayuda,21.1,3,Itagüí
+CASO00049,10/08/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Académica,15.6,5,Itagüí
+CASO00050,10/10/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Académica,34.5,3,Itagüí
+CASO00051,29/01/2024,2024-1,Ciencias Económicas,Contaduría,Dificultad académica,Mesa de ayuda,8.8,4,Itagüí
+CASO00052,06/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Problemas personales,Mesa de ayuda,44.3,3,Medellín
+CASO00053,16/02/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Académica,9.3,5,Medellín
+CASO00054,23/06/2024,2024-1,Ingeniería,Ingeniería Mecánica,Problemas personales,Académica,12.7,2,Apartadó
+CASO00055,01/08/2024,2024-2,Artes y Humanidades,Comunicación,Acceso a plataforma,Mesa de ayuda,34.9,4,Itagüí
+CASO00056,13/02/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Psicosocial,36.2,3,Itagüí
+CASO00057,15/03/2024,2024-1,Ingeniería,Ingeniería Electrónica,Problemas personales,Académica,9.4,5,Medellín
+CASO00058,03/10/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Académica,16.7,3,Medellín
+CASO00059,01/08/2024,2024-2,Ingeniería,Ingeniería Electrónica,Problemas personales,Psicosocial,32.6,3,Rionegro
+CASO00060,10/05/2024,2024-1,Artes y Humanidades,Comunicación,Dificultad académica,Académica,25.7,4,Rionegro
+CASO00061,21/02/2024,2024-1,Artes y Humanidades,Comunicación,Acceso a plataforma,Psicosocial,43.1,2,Apartadó
+CASO00062,03/09/2024,2024-2,Ciencias Económicas,Contaduría,Acceso a plataforma,Académica,32.7,2,Apartadó
+CASO00063,20/11/2024,2024-2,Artes y Humanidades,Comunicación,Problemas personales,Tutoría,16.0,4,Itagüí
+CASO00064,08/12/2024,2024-2,Ciencias Económicas,Contaduría,Soporte técnico,Tutoría,17.2,3,Apartadó
+CASO00065,17/08/2024,2024-2,Artes y Humanidades,Artes Escénicas,Soporte técnico,Tutoría,19.9,2,Itagüí
+CASO00066,27/02/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Problemas personales,Psicosocial,5.0,2,Rionegro
+CASO00067,04/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Tutoría,29.2,5,Medellín
+CASO00068,15/10/2024,2024-2,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Académica,34.4,4,Apartadó
+CASO00069,29/11/2024,2024-2,Artes y Humanidades,Comunicación,Dificultad académica,Mesa de ayuda,0.5,3,Itagüí
+CASO00070,07/09/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Mesa de ayuda,22.6,5,Medellín
+CASO00071,13/03/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Psicosocial,17.2,3,Medellín
+CASO00072,04/12/2024,2024-2,Artes y Humanidades,Artes Escénicas,Soporte técnico,Tutoría,32.9,5,Medellín
+CASO00073,09/11/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Académica,17.9,2,Rionegro
+CASO00074,22/05/2024,2024-1,Ingeniería,Ingeniería Mecánica,Problemas personales,Académica,38.0,3,Itagüí
+CASO00075,24/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Académica,20.1,3,Medellín
+CASO00076,03/02/2024,2024-1,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Académica,33.9,5,Itagüí
+CASO00077,22/02/2024,2024-1,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Tutoría,29.4,2,Apartadó
+CASO00078,28/01/2024,2024-1,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Psicosocial,11.1,4,Apartadó
+CASO00079,25/11/2024,2024-2,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Académica,33.5,2,Itagüí
+CASO00080,23/03/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Psicosocial,10.0,4,Apartadó
+CASO00081,13/11/2024,2024-2,Artes y Humanidades,Comunicación,Soporte técnico,Tutoría,9.4,3,Apartadó
+CASO00082,16/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Tutoría,17.9,4,Itagüí
+CASO00083,10/03/2024,2024-1,Ingeniería,Ingeniería Electrónica,Dificultad académica,Tutoría,48.4,4,Itagüí
+CASO00084,31/05/2024,2024-1,Ciencias Económicas,Administración,Problemas personales,Psicosocial,49.8,3,Itagüí
+CASO00085,19/07/2024,2024-2,Ciencias Económicas,Economía,Orientación de matrícula,Mesa de ayuda,17.4,3,Itagüí
+CASO00086,24/11/2024,2024-2,Ingeniería,Ingeniería Electrónica,Soporte técnico,Tutoría,24.2,4,Medellín
+CASO00087,29/04/2024,2024-1,Artes y Humanidades,Comunicación,Acceso a plataforma,Académica,23.4,5,Itagüí
+CASO00088,17/09/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Académica,31.9,3,Rionegro
+CASO00089,28/03/2024,2024-1,Artes y Humanidades,Comunicación,Soporte técnico,Psicosocial,3.6,4,Apartadó
+CASO00090,09/12/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Mesa de ayuda,43.9,3,Rionegro
+CASO00091,21/01/2024,2024-1,Ciencias Económicas,Economía,Soporte técnico,Mesa de ayuda,19.7,4,Medellín
+CASO00092,29/10/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Mesa de ayuda,39.5,3,Apartadó
+CASO00093,03/12/2024,2024-2,Ciencias Económicas,Economía,Acceso a plataforma,Tutoría,15.2,2,Medellín
+CASO00094,13/06/2024,2024-1,Ingeniería,Ingeniería Electrónica,Problemas personales,Académica,27.7,4,Medellín
+CASO00095,21/10/2024,2024-2,Ingeniería,Ingeniería Electrónica,Dificultad académica,Mesa de ayuda,19.1,3,Apartadó
+CASO00096,24/07/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Mesa de ayuda,22.4,5,Medellín
+CASO00097,20/11/2024,2024-2,Ciencias Económicas,Contaduría,Problemas personales,Psicosocial,13.0,5,Medellín
+CASO00098,20/08/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Académica,25.3,2,Rionegro
+CASO00099,09/09/2024,2024-2,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Académica,35.1,5,Medellín
+CASO00100,11/02/2024,2024-1,Ciencias Económicas,Economía,Dificultad académica,Tutoría,10.7,2,Apartadó
+CASO00101,01/11/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Psicosocial,21.6,5,Medellín
+CASO00102,14/12/2024,2024-2,Ciencias Económicas,Contaduría,Orientación de matrícula,Académica,26.4,3,Apartadó
+CASO00103,25/02/2024,2024-1,Artes y Humanidades,Comunicación,Soporte técnico,Tutoría,42.3,3,Rionegro
+CASO00104,27/10/2024,2024-2,Ingeniería,Ingeniería Electrónica,Problemas personales,Psicosocial,27.6,4,Apartadó
+CASO00105,09/10/2024,2024-2,Ingeniería,Ingeniería Mecánica,Problemas personales,Mesa de ayuda,7.3,4,Itagüí
+CASO00106,22/04/2024,2024-1,Ingeniería,Ingeniería Mecánica,Soporte técnico,Académica,10.9,2,Itagüí
+CASO00107,28/02/2024,2024-1,Ingeniería,Ingeniería Electrónica,Soporte técnico,Académica,42.1,5,Rionegro
+CASO00108,21/05/2024,2024-1,Artes y Humanidades,Artes Escénicas,Dificultad académica,Mesa de ayuda,23.2,2,Itagüí
+CASO00109,25/03/2024,2024-1,Ciencias Económicas,Economía,Orientación de matrícula,Psicosocial,35.2,4,Rionegro
+CASO00110,07/12/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Tutoría,37.7,2,Itagüí
+CASO00111,13/08/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Mesa de ayuda,41.2,4,Medellín
+CASO00112,25/01/2024,2024-1,Ciencias Económicas,Economía,Acceso a plataforma,Mesa de ayuda,25.4,4,Medellín
+CASO00113,26/07/2024,2024-2,Ciencias Económicas,Contaduría,Dificultad académica,Tutoría,16.9,4,Medellín
+CASO00114,20/11/2024,2024-2,Ciencias Económicas,Administración,Orientación de matrícula,Mesa de ayuda,36.6,5,Apartadó
+CASO00115,15/08/2024,2024-2,Ciencias Económicas,Contaduría,Soporte técnico,Académica,27.3,4,Medellín
+CASO00116,28/09/2024,2024-2,Ingeniería,Ingeniería Electrónica,Dificultad académica,Psicosocial,33.7,4,Itagüí
+CASO00117,17/08/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Académica,38.7,4,Apartadó
+CASO00118,06/08/2024,2024-2,Ciencias Económicas,Contaduría,Dificultad académica,Académica,6.5,2,Apartadó
+CASO00119,06/12/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Problemas personales,Mesa de ayuda,37.0,3,Medellín
+CASO00120,24/08/2024,2024-2,Artes y Humanidades,Comunicación,Orientación de matrícula,Mesa de ayuda,19.9,4,Itagüí
+CASO00121,23/02/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Tutoría,11.7,4,Medellín
+CASO00122,01/09/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Psicosocial,50.6,5,Apartadó
+CASO00123,02/09/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Tutoría,37.6,3,Medellín
+CASO00124,25/04/2024,2024-1,Ciencias Económicas,Contaduría,Soporte técnico,Tutoría,18.3,4,Rionegro
+CASO00125,15/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Académica,26.1,3,Rionegro
+CASO00126,22/03/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Académica,21.3,2,Apartadó
+CASO00127,27/11/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Psicosocial,46.7,3,Apartadó
+CASO00128,25/05/2024,2024-1,Artes y Humanidades,Comunicación,Orientación de matrícula,Tutoría,32.4,4,Apartadó
+CASO00129,30/08/2024,2024-2,Artes y Humanidades,Comunicación,Problemas personales,Tutoría,32.0,5,Medellín
+CASO00130,15/05/2024,2024-1,Artes y Humanidades,Comunicación,Soporte técnico,Tutoría,34.8,2,Apartadó
+CASO00131,17/07/2024,2024-2,Artes y Humanidades,Comunicación,Problemas personales,Psicosocial,16.3,2,Apartadó
+CASO00132,29/05/2024,2024-1,Ciencias Económicas,Contaduría,Problemas personales,Mesa de ayuda,1.9,2,Medellín
+CASO00133,21/04/2024,2024-1,Ciencias Económicas,Administración,Problemas personales,Psicosocial,21.5,3,Rionegro
+CASO00134,05/12/2024,2024-2,Artes y Humanidades,Artes Escénicas,Dificultad académica,Psicosocial,41.0,3,Medellín
+CASO00135,08/08/2024,2024-2,Ciencias Económicas,Economía,Orientación de matrícula,Psicosocial,44.7,3,Itagüí
+CASO00136,01/05/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Psicosocial,10.6,5,Medellín
+CASO00137,19/08/2024,2024-2,Artes y Humanidades,Comunicación,Soporte técnico,Mesa de ayuda,20.6,2,Itagüí
+CASO00138,26/01/2024,2024-1,Artes y Humanidades,Comunicación,Orientación de matrícula,Tutoría,46.6,2,Medellín
+CASO00139,06/08/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Psicosocial,60.5,2,Rionegro
+CASO00140,30/05/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Tutoría,38.9,5,Itagüí
+CASO00141,24/11/2024,2024-2,Ingeniería,Ingeniería Electrónica,Dificultad académica,Tutoría,0.5,4,Apartadó
+CASO00142,22/08/2024,2024-2,Ciencias Económicas,Administración,Problemas personales,Mesa de ayuda,45.8,3,Rionegro
+CASO00143,03/08/2024,2024-2,Artes y Humanidades,Artes Escénicas,Dificultad académica,Mesa de ayuda,44.1,5,Apartadó
+CASO00144,08/08/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Tutoría,0.5,5,Rionegro
+CASO00145,16/11/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Mesa de ayuda,28.0,4,Rionegro
+CASO00146,02/04/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Académica,36.2,3,Apartadó
+CASO00147,24/07/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Tutoría,7.3,2,Rionegro
+CASO00148,30/07/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Académica,15.0,4,Rionegro
+CASO00149,29/03/2024,2024-1,Ciencias Económicas,Economía,Orientación de matrícula,Psicosocial,51.8,4,Itagüí
+CASO00150,28/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Problemas personales,Mesa de ayuda,37.1,2,Itagüí
+CASO00151,29/06/2024,2024-1,Ciencias Económicas,Administración,Orientación de matrícula,Académica,33.2,5,Rionegro
+CASO00152,16/03/2024,2024-1,Ingeniería,Ingeniería Electrónica,Dificultad académica,Académica,6.8,2,Itagüí
+CASO00153,18/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Soporte técnico,Académica,23.6,5,Apartadó
+CASO00154,12/10/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Psicosocial,32.5,5,Medellín
+CASO00155,16/04/2024,2024-1,Artes y Humanidades,Comunicación,Orientación de matrícula,Mesa de ayuda,14.3,4,Medellín
+CASO00156,18/10/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Tutoría,31.8,4,Itagüí
+CASO00157,15/10/2024,2024-2,Ingeniería,Ingeniería Mecánica,Acceso a plataforma,Tutoría,42.8,2,Apartadó
+CASO00158,10/08/2024,2024-2,Ciencias Económicas,Contaduría,Dificultad académica,Mesa de ayuda,22.0,3,Apartadó
+CASO00159,01/08/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Psicosocial,19.5,5,Medellín
+CASO00160,30/09/2024,2024-2,Artes y Humanidades,Artes Escénicas,Soporte técnico,Mesa de ayuda,42.1,2,Apartadó
+CASO00161,29/10/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Académica,26.4,5,Rionegro
+CASO00162,30/07/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Académica,15.1,2,Apartadó
+CASO00163,12/12/2024,2024-2,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Tutoría,26.8,5,Rionegro
+CASO00164,20/03/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Psicosocial,17.4,4,Itagüí
+CASO00165,13/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Académica,30.1,4,Medellín
+CASO00166,18/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Psicosocial,20.0,2,Apartadó
+CASO00167,27/11/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Psicosocial,0.5,5,Medellín
+CASO00168,07/06/2024,2024-1,Artes y Humanidades,Comunicación,Problemas personales,Mesa de ayuda,48.1,5,Medellín
+CASO00169,26/04/2024,2024-1,Ciencias Económicas,Contaduría,Problemas personales,Mesa de ayuda,10.7,3,Rionegro
+CASO00170,14/05/2024,2024-1,Ciencias Económicas,Administración,Acceso a plataforma,Mesa de ayuda,22.3,4,Medellín
+CASO00171,11/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Mesa de ayuda,13.6,4,Medellín
+CASO00172,28/03/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Tutoría,26.4,3,Rionegro
+CASO00173,04/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Soporte técnico,Académica,40.9,3,Medellín
+CASO00174,07/11/2024,2024-2,Artes y Humanidades,Comunicación,Acceso a plataforma,Académica,5.6,3,Apartadó
+CASO00175,03/09/2024,2024-2,Artes y Humanidades,Comunicación,Orientación de matrícula,Psicosocial,24.4,3,Rionegro
+CASO00176,23/08/2024,2024-2,Artes y Humanidades,Comunicación,Dificultad académica,Psicosocial,35.5,2,Itagüí
+CASO00177,15/02/2024,2024-1,Artes y Humanidades,Artes Escénicas,Soporte técnico,Psicosocial,15.3,3,Itagüí
+CASO00178,23/09/2024,2024-2,Artes y Humanidades,Comunicación,Problemas personales,Académica,22.8,2,Apartadó
+CASO00179,28/01/2024,2024-1,Artes y Humanidades,Artes Escénicas,Problemas personales,Académica,42.4,5,Apartadó
+CASO00180,26/01/2024,2024-1,Ciencias Económicas,Economía,Problemas personales,Tutoría,21.3,4,Apartadó
+CASO00181,07/03/2024,2024-1,Ingeniería,Ingeniería Mecánica,Dificultad académica,Académica,45.2,3,Rionegro
+CASO00182,13/12/2024,2024-2,Ingeniería,Ingeniería Mecánica,Dificultad académica,Académica,30.7,2,Apartadó
+CASO00183,02/08/2024,2024-2,Artes y Humanidades,Comunicación,Orientación de matrícula,Académica,5.7,3,Medellín
+CASO00184,04/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Mesa de ayuda,29.5,3,Medellín
+CASO00185,20/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Mesa de ayuda,29.0,4,Medellín
+CASO00186,23/02/2024,2024-1,Ciencias Económicas,Contaduría,Problemas personales,Psicosocial,5.4,4,Apartadó
+CASO00187,09/04/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Tutoría,17.3,2,Medellín
+CASO00188,07/02/2024,2024-1,Ingeniería,Ingeniería Electrónica,Problemas personales,Psicosocial,33.9,2,Itagüí
+CASO00189,07/04/2024,2024-1,Artes y Humanidades,Comunicación,Soporte técnico,Mesa de ayuda,0.5,2,Apartadó
+CASO00190,07/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Académica,32.4,4,Medellín
+CASO00191,14/10/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Tutoría,32.8,3,Medellín
+CASO00192,14/02/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Mesa de ayuda,46.1,5,Apartadó
+CASO00193,16/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Problemas personales,Mesa de ayuda,0.5,2,Itagüí
+CASO00194,06/05/2024,2024-1,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Psicosocial,26.8,2,Itagüí
+CASO00195,11/04/2024,2024-1,Ciencias Económicas,Economía,Problemas personales,Psicosocial,16.6,3,Apartadó
+CASO00196,03/03/2024,2024-1,Ingeniería,Ingeniería Mecánica,Dificultad académica,Psicosocial,14.0,3,Itagüí
+CASO00197,06/11/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Tutoría,27.2,3,Rionegro
+CASO00198,20/10/2024,2024-2,Ingeniería,Ingeniería Electrónica,Dificultad académica,Psicosocial,28.9,4,Itagüí
+CASO00199,28/08/2024,2024-2,Ingeniería,Ingeniería Electrónica,Dificultad académica,Académica,47.3,4,Medellín
+CASO00200,19/05/2024,2024-1,Artes y Humanidades,Artes Escénicas,Soporte técnico,Tutoría,12.9,2,Rionegro
+CASO00201,20/02/2024,2024-1,Ciencias Económicas,Economía,Problemas personales,Académica,32.6,3,Rionegro
+CASO00202,08/08/2024,2024-2,Ciencias Económicas,Administración,Problemas personales,Académica,26.9,2,Apartadó
+CASO00203,07/06/2024,2024-1,Artes y Humanidades,Artes Escénicas,Dificultad académica,Tutoría,42.1,5,Itagüí
+CASO00204,21/05/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Académica,10.4,5,Apartadó
+CASO00205,13/12/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Mesa de ayuda,26.4,5,Rionegro
+CASO00206,23/07/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Orientación de matrícula,Tutoría,6.9,3,Rionegro
+CASO00207,04/10/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Tutoría,16.0,3,Rionegro
+CASO00208,20/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Psicosocial,19.7,5,Rionegro
+CASO00209,09/10/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Mesa de ayuda,17.8,3,Medellín
+CASO00210,13/10/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Psicosocial,23.8,4,Medellín
+CASO00211,27/08/2024,2024-2,Artes y Humanidades,Artes Escénicas,Dificultad académica,Mesa de ayuda,23.5,3,Medellín
+CASO00212,01/10/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Mesa de ayuda,26.3,4,Medellín
+CASO00213,09/09/2024,2024-2,Artes y Humanidades,Artes Escénicas,Problemas personales,Tutoría,18.3,3,Itagüí
+CASO00214,28/02/2024,2024-1,Ingeniería,Ingeniería Mecánica,Acceso a plataforma,Tutoría,24.2,4,Itagüí
+CASO00215,08/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Tutoría,21.2,5,Itagüí
+CASO00216,27/01/2024,2024-1,Artes y Humanidades,Comunicación,Acceso a plataforma,Mesa de ayuda,25.3,4,Rionegro
+CASO00217,30/11/2024,2024-2,Ciencias Económicas,Economía,Acceso a plataforma,Psicosocial,19.5,5,Apartadó
+CASO00218,31/05/2024,2024-1,Ciencias Económicas,Contaduría,Soporte técnico,Tutoría,7.8,4,Medellín
+CASO00219,03/09/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Tutoría,35.6,5,Itagüí
+CASO00220,13/05/2024,2024-1,Ciencias Económicas,Contaduría,Soporte técnico,Psicosocial,28.8,5,Rionegro
+CASO00221,09/03/2024,2024-1,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Académica,23.3,4,Apartadó
+CASO00222,21/06/2024,2024-1,Artes y Humanidades,Comunicación,Orientación de matrícula,Mesa de ayuda,32.9,4,Rionegro
+CASO00223,17/05/2024,2024-1,Ingeniería,Ingeniería Mecánica,Acceso a plataforma,Académica,23.5,4,Itagüí
+CASO00224,15/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Mesa de ayuda,7.4,3,Medellín
+CASO00225,05/09/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Psicosocial,19.6,5,Apartadó
+CASO00226,03/10/2024,2024-2,Ciencias Económicas,Economía,Soporte técnico,Mesa de ayuda,11.1,2,Rionegro
+CASO00227,04/03/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Mesa de ayuda,31.9,5,Medellín
+CASO00228,28/02/2024,2024-1,Artes y Humanidades,Comunicación,Orientación de matrícula,Tutoría,23.7,3,Apartadó
+CASO00229,07/11/2024,2024-2,Artes y Humanidades,Comunicación,Soporte técnico,Académica,25.9,3,Apartadó
+CASO00230,19/07/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Psicosocial,13.9,5,Apartadó
+CASO00231,21/08/2024,2024-2,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Tutoría,9.9,4,Itagüí
+CASO00232,14/02/2024,2024-1,Artes y Humanidades,Comunicación,Orientación de matrícula,Tutoría,37.1,5,Rionegro
+CASO00233,23/07/2024,2024-2,Artes y Humanidades,Comunicación,Acceso a plataforma,Académica,11.1,3,Apartadó
+CASO00234,01/05/2024,2024-1,Ingeniería,Ingeniería Mecánica,Problemas personales,Académica,20.1,4,Rionegro
+CASO00235,25/03/2024,2024-1,Ciencias Económicas,Contaduría,Soporte técnico,Mesa de ayuda,33.8,3,Rionegro
+CASO00236,05/02/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Psicosocial,35.4,2,Rionegro
+CASO00237,14/05/2024,2024-1,Ingeniería,Ingeniería Mecánica,Acceso a plataforma,Mesa de ayuda,28.4,3,Itagüí
+CASO00238,09/08/2024,2024-2,Ciencias Económicas,Administración,Orientación de matrícula,Psicosocial,8.5,2,Apartadó
+CASO00239,09/10/2024,2024-2,Ciencias Económicas,Economía,Orientación de matrícula,Psicosocial,16.2,2,Apartadó
+CASO00240,26/10/2024,2024-2,Ciencias Económicas,Contaduría,Acceso a plataforma,Mesa de ayuda,38.5,4,Apartadó
+CASO00241,18/10/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Académica,18.5,2,Rionegro
+CASO00242,20/05/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Tutoría,9.0,5,Itagüí
+CASO00243,27/04/2024,2024-1,Ingeniería,Ingeniería Electrónica,Problemas personales,Mesa de ayuda,17.3,2,Itagüí
+CASO00244,01/02/2024,2024-1,Ciencias Económicas,Economía,Problemas personales,Tutoría,22.8,3,Medellín
+CASO00245,03/12/2024,2024-2,Ciencias Económicas,Administración,Orientación de matrícula,Tutoría,7.3,4,Itagüí
+CASO00246,18/11/2024,2024-2,Ciencias Económicas,Contaduría,Acceso a plataforma,Psicosocial,30.1,2,Itagüí
+CASO00247,06/02/2024,2024-1,Ciencias Económicas,Economía,Problemas personales,Mesa de ayuda,18.8,4,Medellín
+CASO00248,20/06/2024,2024-1,Ingeniería,Ingeniería Mecánica,Acceso a plataforma,Académica,32.6,3,Itagüí
+CASO00249,04/09/2024,2024-2,Ciencias Económicas,Economía,Acceso a plataforma,Mesa de ayuda,19.8,5,Itagüí
+CASO00250,25/07/2024,2024-2,Artes y Humanidades,Comunicación,Dificultad académica,Psicosocial,14.6,5,Apartadó
+CASO00251,22/04/2024,2024-1,Ciencias Económicas,Economía,Dificultad académica,Tutoría,23.6,2,Rionegro
+CASO00252,29/01/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Académica,18.3,2,Apartadó
+CASO00253,26/09/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Mesa de ayuda,26.9,5,Apartadó
+CASO00254,21/07/2024,2024-2,Ingeniería,Ingeniería Mecánica,Dificultad académica,Mesa de ayuda,0.5,2,Medellín
+CASO00255,26/11/2024,2024-2,Artes y Humanidades,Artes Escénicas,Dificultad académica,Tutoría,25.3,2,Rionegro
+CASO00256,16/06/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Tutoría,20.8,3,Rionegro
+CASO00257,07/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Psicosocial,8.7,5,Itagüí
+CASO00258,08/09/2024,2024-2,Ingeniería,Ingeniería Electrónica,Soporte técnico,Académica,26.6,2,Itagüí
+CASO00259,28/06/2024,2024-1,Artes y Humanidades,Comunicación,Soporte técnico,Tutoría,16.8,2,Apartadó
+CASO00260,23/09/2024,2024-2,Ciencias Económicas,Economía,Soporte técnico,Tutoría,4.9,4,Medellín
+CASO00261,07/11/2024,2024-2,Ciencias Económicas,Contaduría,Acceso a plataforma,Tutoría,22.7,4,Rionegro
+CASO00262,23/06/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Académica,16.6,3,Medellín
+CASO00263,03/11/2024,2024-2,Ciencias Económicas,Economía,Acceso a plataforma,Tutoría,31.1,5,Medellín
+CASO00264,06/03/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Problemas personales,Tutoría,24.6,3,Medellín
+CASO00265,16/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Psicosocial,30.5,2,Apartadó
+CASO00266,12/10/2024,2024-2,Ciencias Económicas,Contaduría,Dificultad académica,Tutoría,21.7,3,Itagüí
+CASO00267,20/02/2024,2024-1,Ciencias Económicas,Contaduría,Soporte técnico,Académica,15.4,5,Medellín
+CASO00268,29/04/2024,2024-1,Ingeniería,Ingeniería Mecánica,Soporte técnico,Académica,21.1,3,Medellín
+CASO00269,06/09/2024,2024-2,Ciencias Económicas,Contaduría,Problemas personales,Mesa de ayuda,15.3,4,Medellín
+CASO00270,03/02/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Psicosocial,31.9,3,Apartadó
+CASO00271,29/09/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Orientación de matrícula,Mesa de ayuda,15.6,3,Itagüí
+CASO00272,24/06/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Psicosocial,27.0,2,Rionegro
+CASO00273,19/11/2024,2024-2,Ciencias Económicas,Contaduría,Orientación de matrícula,Académica,16.4,4,Itagüí
+CASO00274,25/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Tutoría,16.6,4,Itagüí
+CASO00275,28/01/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Tutoría,6.1,2,Apartadó
+CASO00276,25/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Tutoría,27.4,3,Itagüí
+CASO00277,14/03/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Psicosocial,35.5,4,Itagüí
+CASO00278,03/08/2024,2024-2,Ciencias Económicas,Contaduría,Problemas personales,Tutoría,21.1,3,Apartadó
+CASO00279,18/02/2024,2024-1,Ingeniería,Ingeniería Electrónica,Soporte técnico,Académica,27.8,3,Medellín
+CASO00280,03/08/2024,2024-2,Ingeniería,Ingeniería Mecánica,Dificultad académica,Académica,37.5,2,Apartadó
+CASO00281,13/04/2024,2024-1,Ingeniería,Ingeniería Mecánica,Problemas personales,Mesa de ayuda,25.1,4,Apartadó
+CASO00282,15/04/2024,2024-1,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Académica,35.5,5,Rionegro
+CASO00283,01/02/2024,2024-1,Ciencias Económicas,Contaduría,Problemas personales,Tutoría,22.2,4,Medellín
+CASO00284,28/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Tutoría,17.5,3,Itagüí
+CASO00285,02/04/2024,2024-1,Artes y Humanidades,Comunicación,Problemas personales,Mesa de ayuda,8.9,5,Apartadó
+CASO00286,14/04/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Mesa de ayuda,33.9,2,Apartadó
+CASO00287,31/01/2024,2024-1,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Académica,10.9,2,Medellín
+CASO00288,17/05/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Mesa de ayuda,23.2,3,Medellín
+CASO00289,01/09/2024,2024-2,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Psicosocial,8.1,3,Medellín
+CASO00290,15/12/2024,2024-2,Ingeniería,Ingeniería Electrónica,Problemas personales,Psicosocial,27.8,2,Medellín
+CASO00291,23/01/2024,2024-1,Ciencias Económicas,Contaduría,Soporte técnico,Psicosocial,19.1,3,Rionegro
+CASO00292,04/11/2024,2024-2,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Académica,11.7,4,Itagüí
+CASO00293,21/03/2024,2024-1,Artes y Humanidades,Comunicación,Problemas personales,Tutoría,33.7,2,Apartadó
+CASO00294,12/03/2024,2024-1,Artes y Humanidades,Artes Escénicas,Dificultad académica,Académica,28.5,3,Rionegro
+CASO00295,30/03/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Tutoría,9.9,3,Medellín
+CASO00296,02/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Mesa de ayuda,25.5,5,Itagüí
+CASO00297,10/02/2024,2024-1,Ciencias Económicas,Administración,Problemas personales,Psicosocial,48.3,5,Apartadó
+CASO00298,09/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Soporte técnico,Psicosocial,18.3,5,Apartadó
+CASO00299,05/02/2024,2024-1,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Mesa de ayuda,26.4,5,Apartadó
+CASO00300,31/03/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Tutoría,53.3,5,Itagüí
+CASO00301,16/10/2024,2024-2,Ciencias Económicas,Contaduría,Problemas personales,Académica,32.2,4,Apartadó
+CASO00302,14/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Soporte técnico,Académica,22.5,4,Apartadó
+CASO00303,17/02/2024,2024-1,Artes y Humanidades,Comunicación,Soporte técnico,Psicosocial,17.7,4,Rionegro
+CASO00304,03/12/2024,2024-2,Ciencias Económicas,Economía,Soporte técnico,Psicosocial,38.1,5,Rionegro
+CASO00305,26/09/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Académica,10.3,5,Rionegro
+CASO00306,25/06/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Problemas personales,Mesa de ayuda,36.3,2,Rionegro
+CASO00307,13/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Problemas personales,Académica,34.0,3,Rionegro
+CASO00308,14/10/2024,2024-2,Ciencias Económicas,Contaduría,Orientación de matrícula,Psicosocial,39.0,4,Itagüí
+CASO00309,30/09/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Psicosocial,27.2,4,Rionegro
+CASO00310,05/02/2024,2024-1,Ciencias Económicas,Contaduría,Orientación de matrícula,Tutoría,30.6,5,Itagüí
+CASO00311,05/11/2024,2024-2,Artes y Humanidades,Comunicación,Dificultad académica,Mesa de ayuda,26.5,4,Medellín
+CASO00312,08/02/2024,2024-1,Ingeniería,Ingeniería Electrónica,Dificultad académica,Académica,5.8,3,Rionegro
+CASO00313,22/10/2024,2024-2,Ciencias Económicas,Economía,Orientación de matrícula,Académica,12.1,3,Itagüí
+CASO00314,21/01/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Tutoría,31.0,2,Itagüí
+CASO00315,06/06/2024,2024-1,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Académica,33.8,4,Medellín
+CASO00316,10/12/2024,2024-2,Ingeniería,Ingeniería Electrónica,Problemas personales,Psicosocial,40.8,3,Itagüí
+CASO00317,19/07/2024,2024-2,Ingeniería,Ingeniería Electrónica,Soporte técnico,Mesa de ayuda,9.4,3,Medellín
+CASO00318,06/04/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Tutoría,1.5,2,Apartadó
+CASO00319,30/06/2024,2024-1,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Mesa de ayuda,16.4,2,Rionegro
+CASO00320,15/02/2024,2024-1,Ciencias Económicas,Economía,Acceso a plataforma,Mesa de ayuda,35.8,4,Rionegro
+CASO00321,20/06/2024,2024-1,Ingeniería,Ingeniería Electrónica,Problemas personales,Tutoría,28.7,5,Itagüí
+CASO00322,16/05/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Psicosocial,21.5,4,Itagüí
+CASO00323,05/10/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Tutoría,11.0,3,Apartadó
+CASO00324,05/06/2024,2024-1,Artes y Humanidades,Artes Escénicas,Dificultad académica,Tutoría,15.8,3,Medellín
+CASO00325,25/09/2024,2024-2,Artes y Humanidades,Artes Escénicas,Dificultad académica,Académica,28.6,3,Itagüí
+CASO00326,26/10/2024,2024-2,Ciencias Económicas,Administración,Orientación de matrícula,Tutoría,21.0,4,Medellín
+CASO00327,20/04/2024,2024-1,Ciencias Económicas,Administración,Problemas personales,Académica,26.0,4,Itagüí
+CASO00328,29/08/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Tutoría,26.9,4,Itagüí
+CASO00329,05/04/2024,2024-1,Ingeniería,Ingeniería Mecánica,Soporte técnico,Tutoría,14.3,3,Rionegro
+CASO00330,08/02/2024,2024-1,Ciencias Económicas,Economía,Acceso a plataforma,Tutoría,9.1,3,Apartadó
+CASO00331,29/11/2024,2024-2,Ciencias Económicas,Economía,Soporte técnico,Académica,39.5,2,Itagüí
+CASO00332,26/07/2024,2024-2,Artes y Humanidades,Artes Escénicas,Problemas personales,Psicosocial,37.0,4,Itagüí
+CASO00333,11/12/2024,2024-2,Ciencias Económicas,Economía,Acceso a plataforma,Mesa de ayuda,22.4,3,Medellín
+CASO00334,25/06/2024,2024-1,Artes y Humanidades,Artes Escénicas,Soporte técnico,Mesa de ayuda,10.1,4,Rionegro
+CASO00335,28/08/2024,2024-2,Ciencias Económicas,Contaduría,Soporte técnico,Académica,43.2,4,Medellín
+CASO00336,10/04/2024,2024-1,Ciencias Económicas,Economía,Soporte técnico,Académica,28.0,3,Itagüí
+CASO00337,17/10/2024,2024-2,Ciencias Económicas,Contaduría,Dificultad académica,Tutoría,3.1,3,Apartadó
+CASO00338,24/02/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Problemas personales,Tutoría,28.3,2,Medellín
+CASO00339,16/06/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Tutoría,28.9,2,Rionegro
+CASO00340,04/03/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Orientación de matrícula,Mesa de ayuda,23.3,3,Itagüí
+CASO00341,01/08/2024,2024-2,Artes y Humanidades,Comunicación,Problemas personales,Académica,35.9,4,Itagüí
+CASO00342,21/02/2024,2024-1,Ciencias Económicas,Economía,Orientación de matrícula,Psicosocial,2.2,2,Apartadó
+CASO00343,24/11/2024,2024-2,Ciencias Económicas,Administración,Acceso a plataforma,Psicosocial,13.5,2,Apartadó
+CASO00344,21/11/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Psicosocial,21.8,2,Itagüí
+CASO00345,24/07/2024,2024-2,Ciencias Económicas,Administración,Acceso a plataforma,Mesa de ayuda,29.5,2,Medellín
+CASO00346,23/09/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Mesa de ayuda,37.0,5,Medellín
+CASO00347,21/10/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Tutoría,6.4,3,Rionegro
+CASO00348,25/02/2024,2024-1,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Tutoría,18.4,5,Medellín
+CASO00349,02/05/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Académica,16.3,2,Medellín
+CASO00350,13/03/2024,2024-1,Ciencias Económicas,Economía,Acceso a plataforma,Académica,20.3,4,Apartadó
+CASO00351,04/10/2024,2024-2,Ciencias Económicas,Economía,Acceso a plataforma,Tutoría,35.1,3,Rionegro
+CASO00352,09/08/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Mesa de ayuda,21.0,2,Rionegro
+CASO00353,21/03/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Mesa de ayuda,18.8,2,Itagüí
+CASO00354,05/08/2024,2024-2,Ciencias Económicas,Contaduría,Dificultad académica,Académica,38.9,4,Medellín
+CASO00355,14/12/2024,2024-2,Artes y Humanidades,Comunicación,Acceso a plataforma,Psicosocial,31.0,5,Rionegro
+CASO00356,28/03/2024,2024-1,Ciencias Económicas,Contaduría,Dificultad académica,Psicosocial,29.4,3,Apartadó
+CASO00357,17/08/2024,2024-2,Ingeniería,Ingeniería Electrónica,Dificultad académica,Tutoría,32.3,4,Medellín
+CASO00358,01/06/2024,2024-1,Ciencias Económicas,Economía,Dificultad académica,Mesa de ayuda,39.5,2,Apartadó
+CASO00359,28/07/2024,2024-2,Ciencias Económicas,Economía,Dificultad académica,Académica,17.2,3,Medellín
+CASO00360,26/02/2024,2024-1,Artes y Humanidades,Comunicación,Dificultad académica,Mesa de ayuda,0.5,3,Medellín
+CASO00361,26/10/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Mesa de ayuda,20.3,2,Itagüí
+CASO00362,29/11/2024,2024-2,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Psicosocial,27.2,4,Rionegro
+CASO00363,25/01/2024,2024-1,Ciencias Económicas,Administración,Acceso a plataforma,Psicosocial,36.7,3,Itagüí
+CASO00364,22/02/2024,2024-1,Artes y Humanidades,Comunicación,Orientación de matrícula,Tutoría,19.5,3,Medellín
+CASO00365,11/08/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Tutoría,21.6,5,Rionegro
+CASO00366,23/07/2024,2024-2,Ciencias Económicas,Contaduría,Orientación de matrícula,Académica,45.4,3,Rionegro
+CASO00367,19/08/2024,2024-2,Artes y Humanidades,Comunicación,Orientación de matrícula,Académica,10.8,2,Itagüí
+CASO00368,08/11/2024,2024-2,Artes y Humanidades,Comunicación,Acceso a plataforma,Psicosocial,36.8,5,Rionegro
+CASO00369,17/08/2024,2024-2,Ciencias Económicas,Contaduría,Dificultad académica,Tutoría,18.7,4,Apartadó
+CASO00370,20/01/2024,2024-1,Ingeniería,Ingeniería Mecánica,Dificultad académica,Académica,33.7,2,Itagüí
+CASO00371,03/03/2024,2024-1,Ciencias Económicas,Economía,Acceso a plataforma,Académica,9.0,4,Medellín
+CASO00372,14/11/2024,2024-2,Ciencias Económicas,Administración,Acceso a plataforma,Académica,27.8,5,Medellín
+CASO00373,24/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Mesa de ayuda,38.9,3,Itagüí
+CASO00374,29/06/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Académica,14.8,4,Rionegro
+CASO00375,14/06/2024,2024-1,Ciencias Económicas,Contaduría,Problemas personales,Mesa de ayuda,18.0,3,Apartadó
+CASO00376,21/09/2024,2024-2,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Psicosocial,18.9,3,Itagüí
+CASO00377,20/10/2024,2024-2,Artes y Humanidades,Comunicación,Problemas personales,Mesa de ayuda,35.0,2,Apartadó
+CASO00378,10/10/2024,2024-2,Ciencias Económicas,Administración,Problemas personales,Psicosocial,21.3,4,Itagüí
+CASO00379,26/02/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Tutoría,4.1,4,Itagüí
+CASO00380,02/11/2024,2024-2,Artes y Humanidades,Artes Escénicas,Problemas personales,Tutoría,24.5,2,Medellín
+CASO00381,30/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Problemas personales,Mesa de ayuda,2.5,3,Rionegro
+CASO00382,31/03/2024,2024-1,Artes y Humanidades,Artes Escénicas,Problemas personales,Académica,13.7,3,Rionegro
+CASO00383,10/06/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Académica,29.1,5,Rionegro
+CASO00384,02/02/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Académica,20.5,4,Itagüí
+CASO00385,17/07/2024,2024-2,Ingeniería,Ingeniería Electrónica,Dificultad académica,Psicosocial,24.8,3,Itagüí
+CASO00386,03/03/2024,2024-1,Ciencias Económicas,Contaduría,Dificultad académica,Académica,28.1,5,Rionegro
+CASO00387,24/09/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Tutoría,11.8,4,Apartadó
+CASO00388,08/03/2024,2024-1,Artes y Humanidades,Comunicación,Problemas personales,Tutoría,24.4,4,Medellín
+CASO00389,13/10/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Mesa de ayuda,53.4,2,Medellín
+CASO00390,06/10/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Académica,36.6,2,Itagüí
+CASO00391,12/10/2024,2024-2,Ingeniería,Ingeniería Mecánica,Problemas personales,Mesa de ayuda,33.0,4,Rionegro
+CASO00392,28/01/2024,2024-1,Ciencias Económicas,Contaduría,Orientación de matrícula,Mesa de ayuda,6.0,3,Rionegro
+CASO00393,26/02/2024,2024-1,Ciencias Económicas,Contaduría,Acceso a plataforma,Psicosocial,21.4,3,Itagüí
+CASO00394,11/11/2024,2024-2,Artes y Humanidades,Comunicación,Acceso a plataforma,Tutoría,27.9,5,Apartadó
+CASO00395,04/10/2024,2024-2,Ciencias Económicas,Economía,Problemas personales,Tutoría,30.2,3,Rionegro
+CASO00396,08/04/2024,2024-1,Ciencias Económicas,Economía,Orientación de matrícula,Tutoría,24.4,3,Itagüí
+CASO00397,31/07/2024,2024-2,Ingeniería,Ingeniería Electrónica,Soporte técnico,Psicosocial,35.9,4,Medellín
+CASO00398,26/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Soporte técnico,Mesa de ayuda,25.4,2,Itagüí
+CASO00399,26/08/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Tutoría,7.8,5,Apartadó
+CASO00400,23/07/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Académica,17.2,4,Itagüí
+CASO00401,08/08/2024,2024-2,Ciencias Económicas,Economía,Acceso a plataforma,Académica,37.5,2,Medellín
+CASO00402,17/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Tutoría,30.7,5,Rionegro
+CASO00403,21/04/2024,2024-1,Artes y Humanidades,Comunicación,Problemas personales,Tutoría,25.0,5,Rionegro
+CASO00404,12/12/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Tutoría,33.1,2,Rionegro
+CASO00405,24/10/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Tutoría,29.3,4,Apartadó
+CASO00406,19/10/2024,2024-2,Ingeniería,Ingeniería Mecánica,Dificultad académica,Académica,26.3,2,Itagüí
+CASO00407,06/09/2024,2024-2,Ingeniería,Ingeniería Mecánica,Acceso a plataforma,Tutoría,39.0,2,Itagüí
+CASO00408,26/06/2024,2024-1,Ingeniería,Ingeniería Mecánica,Problemas personales,Psicosocial,41.8,3,Rionegro
+CASO00409,26/07/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Mesa de ayuda,30.8,3,Medellín
+CASO00410,16/03/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Problemas personales,Académica,19.0,3,Rionegro
+CASO00411,20/01/2024,2024-1,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Psicosocial,37.7,3,Medellín
+CASO00412,25/09/2024,2024-2,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Mesa de ayuda,27.9,4,Itagüí
+CASO00413,26/07/2024,2024-2,Artes y Humanidades,Comunicación,Problemas personales,Mesa de ayuda,31.0,2,Apartadó
+CASO00414,27/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Académica,16.5,4,Itagüí
+CASO00415,05/12/2024,2024-2,Ciencias Económicas,Administración,Acceso a plataforma,Mesa de ayuda,15.5,5,Apartadó
+CASO00416,22/06/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Problemas personales,Tutoría,29.5,2,Itagüí
+CASO00417,14/06/2024,2024-1,Ingeniería,Ingeniería Mecánica,Soporte técnico,Tutoría,18.0,4,Rionegro
+CASO00418,10/09/2024,2024-2,Ciencias Económicas,Economía,Acceso a plataforma,Tutoría,12.3,3,Medellín
+CASO00419,20/06/2024,2024-1,Ciencias Económicas,Administración,Soporte técnico,Psicosocial,28.7,4,Medellín
+CASO00420,16/04/2024,2024-1,Artes y Humanidades,Comunicación,Orientación de matrícula,Tutoría,34.2,5,Rionegro
+CASO00421,22/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Psicosocial,10.4,4,Rionegro
+CASO00422,29/05/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Tutoría,14.0,5,Itagüí
+CASO00423,03/10/2024,2024-2,Ciencias Económicas,Economía,Acceso a plataforma,Psicosocial,21.4,2,Medellín
+CASO00424,23/11/2024,2024-2,Ciencias Económicas,Economía,Problemas personales,Mesa de ayuda,43.0,3,Itagüí
+CASO00425,09/04/2024,2024-1,Ciencias Económicas,Administración,Orientación de matrícula,Tutoría,27.5,4,Apartadó
+CASO00426,22/03/2024,2024-1,Ciencias Económicas,Administración,Orientación de matrícula,Mesa de ayuda,30.3,4,Rionegro
+CASO00427,10/06/2024,2024-1,Artes y Humanidades,Artes Escénicas,Dificultad académica,Tutoría,28.3,3,Apartadó
+CASO00428,11/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Académica,21.7,2,Medellín
+CASO00429,05/04/2024,2024-1,Ingeniería,Ingeniería Mecánica,Problemas personales,Académica,13.9,5,Apartadó
+CASO00430,11/06/2024,2024-1,Ciencias Económicas,Contaduría,Dificultad académica,Mesa de ayuda,13.6,2,Itagüí
+CASO00431,07/06/2024,2024-1,Ingeniería,Ingeniería Mecánica,Soporte técnico,Mesa de ayuda,36.1,4,Apartadó
+CASO00432,21/07/2024,2024-2,Ciencias Económicas,Contaduría,Problemas personales,Psicosocial,29.3,3,Medellín
+CASO00433,28/06/2024,2024-1,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Académica,19.2,3,Medellín
+CASO00434,03/09/2024,2024-2,Ciencias Económicas,Economía,Orientación de matrícula,Académica,57.2,3,Medellín
+CASO00435,18/07/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Tutoría,34.3,2,Apartadó
+CASO00436,25/05/2024,2024-1,Ciencias Económicas,Contaduría,Soporte técnico,Tutoría,16.5,4,Itagüí
+CASO00437,09/09/2024,2024-2,Ciencias Económicas,Economía,Soporte técnico,Mesa de ayuda,11.6,3,Apartadó
+CASO00438,05/11/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Mesa de ayuda,34.6,2,Rionegro
+CASO00439,30/09/2024,2024-2,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Mesa de ayuda,47.7,2,Medellín
+CASO00440,03/10/2024,2024-2,Ciencias Económicas,Economía,Soporte técnico,Tutoría,22.5,5,Rionegro
+CASO00441,19/09/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Mesa de ayuda,24.2,4,Apartadó
+CASO00442,07/05/2024,2024-1,Ciencias Económicas,Contaduría,Soporte técnico,Psicosocial,32.5,4,Itagüí
+CASO00443,17/07/2024,2024-2,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Mesa de ayuda,14.1,5,Medellín
+CASO00444,02/06/2024,2024-1,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Psicosocial,25.7,3,Rionegro
+CASO00445,19/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Tutoría,21.5,4,Medellín
+CASO00446,18/09/2024,2024-2,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Psicosocial,14.9,3,Itagüí
+CASO00447,27/06/2024,2024-1,Ingeniería,Ingeniería Electrónica,Soporte técnico,Académica,15.9,3,Apartadó
+CASO00448,12/02/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Psicosocial,32.3,2,Apartadó
+CASO00449,03/05/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Mesa de ayuda,22.2,5,Apartadó
+CASO00450,26/08/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Psicosocial,13.2,3,Medellín
+CASO00451,19/07/2024,2024-2,Ciencias Económicas,Contaduría,Orientación de matrícula,Mesa de ayuda,49.2,2,Rionegro
+CASO00452,20/09/2024,2024-2,Ingeniería,Ingeniería Mecánica,Acceso a plataforma,Psicosocial,22.4,5,Medellín
+CASO00453,05/09/2024,2024-2,Ciencias Económicas,Contaduría,Soporte técnico,Psicosocial,38.4,3,Itagüí
+CASO00454,04/08/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Tutoría,0.5,5,Itagüí
+CASO00455,15/02/2024,2024-1,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Mesa de ayuda,30.0,2,Medellín
+CASO00456,29/02/2024,2024-1,Ingeniería,Ingeniería Electrónica,Dificultad académica,Tutoría,34.2,3,Medellín
+CASO00457,04/06/2024,2024-1,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Psicosocial,42.2,4,Apartadó
+CASO00458,16/02/2024,2024-1,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Psicosocial,30.4,2,Rionegro
+CASO00459,04/04/2024,2024-1,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Psicosocial,21.2,5,Rionegro
+CASO00460,21/03/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Problemas personales,Académica,21.7,5,Rionegro
+CASO00461,17/06/2024,2024-1,Artes y Humanidades,Comunicación,Dificultad académica,Tutoría,3.6,2,Rionegro
+CASO00462,25/07/2024,2024-2,Ingeniería,Ingeniería Electrónica,Soporte técnico,Psicosocial,64.2,2,Medellín
+CASO00463,09/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Psicosocial,2.5,5,Itagüí
+CASO00464,12/02/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Psicosocial,16.5,5,Medellín
+CASO00465,10/09/2024,2024-2,Artes y Humanidades,Comunicación,Problemas personales,Académica,25.8,5,Medellín
+CASO00466,08/08/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Académica,11.7,4,Apartadó
+CASO00467,07/12/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Mesa de ayuda,41.6,3,Medellín
+CASO00468,27/01/2024,2024-1,Ciencias Económicas,Economía,Soporte técnico,Mesa de ayuda,33.2,2,Itagüí
+CASO00469,01/08/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Orientación de matrícula,Académica,13.4,5,Rionegro
+CASO00470,11/03/2024,2024-1,Artes y Humanidades,Comunicación,Problemas personales,Académica,20.7,3,Itagüí
+CASO00471,04/09/2024,2024-2,Ciencias Económicas,Contaduría,Soporte técnico,Académica,4.3,5,Medellín
+CASO00472,08/11/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Tutoría,35.6,3,Apartadó
+CASO00473,08/12/2024,2024-2,Ciencias Económicas,Economía,Problemas personales,Académica,24.7,4,Apartadó
+CASO00474,25/08/2024,2024-2,Ciencias Económicas,Economía,Orientación de matrícula,Mesa de ayuda,42.7,2,Rionegro
+CASO00475,09/12/2024,2024-2,Ingeniería,Ingeniería Electrónica,Soporte técnico,Mesa de ayuda,22.4,2,Rionegro
+CASO00476,24/02/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Psicosocial,33.9,3,Itagüí
+CASO00477,18/10/2024,2024-2,Artes y Humanidades,Comunicación,Dificultad académica,Académica,15.2,3,Apartadó
+CASO00478,24/08/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Mesa de ayuda,18.3,2,Rionegro
+CASO00479,08/05/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Psicosocial,19.1,2,Medellín
+CASO00480,28/09/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Tutoría,0.5,5,Rionegro
+CASO00481,29/05/2024,2024-1,Ingeniería,Ingeniería Mecánica,Soporte técnico,Académica,15.7,4,Itagüí
+CASO00482,21/07/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Orientación de matrícula,Tutoría,10.3,3,Rionegro
+CASO00483,04/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Psicosocial,12.7,2,Itagüí
+CASO00484,27/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Problemas personales,Académica,27.5,4,Itagüí
+CASO00485,11/05/2024,2024-1,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Psicosocial,26.5,4,Apartadó
+CASO00486,05/05/2024,2024-1,Ingeniería,Ingeniería Electrónica,Soporte técnico,Mesa de ayuda,0.5,4,Rionegro
+CASO00487,17/10/2024,2024-2,Ciencias Económicas,Economía,Problemas personales,Tutoría,22.1,2,Apartadó
+CASO00488,03/08/2024,2024-2,Artes y Humanidades,Artes Escénicas,Problemas personales,Académica,11.9,3,Itagüí
+CASO00489,16/06/2024,2024-1,Artes y Humanidades,Artes Escénicas,Dificultad académica,Académica,17.2,3,Apartadó
+CASO00490,09/04/2024,2024-1,Ciencias Económicas,Administración,Problemas personales,Académica,31.9,3,Apartadó
+CASO00491,03/06/2024,2024-1,Ciencias Económicas,Administración,Soporte técnico,Académica,25.3,5,Itagüí
+CASO00492,13/09/2024,2024-2,Artes y Humanidades,Artes Escénicas,Soporte técnico,Tutoría,9.3,4,Rionegro
+CASO00493,16/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Académica,45.1,2,Apartadó
+CASO00494,11/04/2024,2024-1,Ciencias Económicas,Economía,Acceso a plataforma,Académica,31.0,3,Rionegro
+CASO00495,24/01/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Académica,20.1,3,Medellín
+CASO00496,03/12/2024,2024-2,Ciencias Económicas,Contaduría,Orientación de matrícula,Psicosocial,41.2,4,Medellín
+CASO00497,07/11/2024,2024-2,Ciencias Económicas,Administración,Acceso a plataforma,Académica,32.9,2,Medellín
+CASO00498,10/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Académica,18.3,5,Medellín
+CASO00499,15/04/2024,2024-1,Ingeniería,Ingeniería Mecánica,Soporte técnico,Académica,42.6,5,Rionegro
+CASO00500,09/08/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Mesa de ayuda,25.4,4,Itagüí
+CASO00501,09/09/2024,2024-2,Ingeniería,Ingeniería Electrónica,Soporte técnico,Mesa de ayuda,26.4,5,Itagüí
+CASO00502,08/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Mesa de ayuda,0.5,2,Medellín
+CASO00503,09/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Tutoría,19.3,2,Medellín
+CASO00504,11/11/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Psicosocial,0.5,4,Apartadó
+CASO00505,16/03/2024,2024-1,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Académica,29.5,3,Apartadó
+CASO00506,25/01/2024,2024-1,Ciencias Económicas,Administración,Problemas personales,Tutoría,22.7,2,Apartadó
+CASO00507,26/09/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Académica,17.4,5,Medellín
+CASO00508,06/02/2024,2024-1,Ingeniería,Ingeniería Electrónica,Problemas personales,Mesa de ayuda,41.8,2,Medellín
+CASO00509,02/10/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Académica,12.3,2,Rionegro
+CASO00510,17/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Problemas personales,Tutoría,3.5,4,Itagüí
+CASO00511,14/09/2024,2024-2,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Mesa de ayuda,4.6,2,Medellín
+CASO00512,11/06/2024,2024-1,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Mesa de ayuda,11.6,2,Rionegro
+CASO00513,31/08/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Mesa de ayuda,15.5,2,Apartadó
+CASO00514,04/08/2024,2024-2,Ciencias Económicas,Administración,Problemas personales,Tutoría,33.7,4,Rionegro
+CASO00515,03/10/2024,2024-2,Ingeniería,Ingeniería Electrónica,Problemas personales,Psicosocial,13.3,2,Rionegro
+CASO00516,06/10/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Psicosocial,33.2,2,Medellín
+CASO00517,22/01/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Psicosocial,18.8,3,Itagüí
+CASO00518,14/05/2024,2024-1,Ingeniería,Ingeniería Electrónica,Soporte técnico,Psicosocial,16.7,2,Apartadó
+CASO00519,01/03/2024,2024-1,Ciencias Económicas,Economía,Orientación de matrícula,Psicosocial,37.1,2,Apartadó
+CASO00520,05/02/2024,2024-1,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Académica,7.3,5,Medellín
+CASO00521,01/02/2024,2024-1,Artes y Humanidades,Comunicación,Acceso a plataforma,Tutoría,18.0,3,Rionegro
+CASO00522,03/12/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Académica,37.2,4,Apartadó
+CASO00523,28/10/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Mesa de ayuda,23.1,4,Apartadó
+CASO00524,05/03/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Mesa de ayuda,0.5,5,Medellín
+CASO00525,06/03/2024,2024-1,Ciencias Económicas,Administración,Orientación de matrícula,Psicosocial,22.7,3,Rionegro
+CASO00526,05/05/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Problemas personales,Académica,23.6,5,Rionegro
+CASO00527,31/08/2024,2024-2,Ciencias Económicas,Contaduría,Acceso a plataforma,Académica,19.7,3,Medellín
+CASO00528,26/03/2024,2024-1,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Mesa de ayuda,20.6,2,Medellín
+CASO00529,04/05/2024,2024-1,Ciencias Económicas,Administración,Orientación de matrícula,Académica,27.1,2,Apartadó
+CASO00530,18/08/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Mesa de ayuda,25.7,2,Rionegro
+CASO00531,07/05/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Tutoría,34.6,4,Medellín
+CASO00532,30/06/2024,2024-1,Ciencias Económicas,Economía,Orientación de matrícula,Académica,17.6,5,Medellín
+CASO00533,16/05/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Académica,40.4,4,Medellín
+CASO00534,13/05/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Problemas personales,Mesa de ayuda,16.6,5,Rionegro
+CASO00535,21/11/2024,2024-2,Ciencias Económicas,Economía,Acceso a plataforma,Mesa de ayuda,15.6,2,Rionegro
+CASO00536,16/09/2024,2024-2,Artes y Humanidades,Artes Escénicas,Problemas personales,Mesa de ayuda,19.0,4,Rionegro
+CASO00537,14/08/2024,2024-2,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Psicosocial,34.7,2,Rionegro
+CASO00538,08/11/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Psicosocial,19.7,3,Itagüí
+CASO00539,24/10/2024,2024-2,Ciencias Económicas,Administración,Acceso a plataforma,Académica,54.1,2,Rionegro
+CASO00540,31/07/2024,2024-2,Ingeniería,Ingeniería Electrónica,Soporte técnico,Psicosocial,16.9,2,Medellín
+CASO00541,09/11/2024,2024-2,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Tutoría,16.9,3,Medellín
+CASO00542,23/08/2024,2024-2,Ciencias Económicas,Contaduría,Acceso a plataforma,Mesa de ayuda,22.6,2,Itagüí
+CASO00543,10/03/2024,2024-1,Ingeniería,Ingeniería Electrónica,Soporte técnico,Mesa de ayuda,10.4,3,Rionegro
+CASO00544,17/08/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Tutoría,25.7,4,Rionegro
+CASO00545,30/01/2024,2024-1,Artes y Humanidades,Comunicación,Dificultad académica,Psicosocial,1.3,5,Rionegro
+CASO00546,02/03/2024,2024-1,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Tutoría,26.3,2,Apartadó
+CASO00547,15/11/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Académica,20.3,3,Itagüí
+CASO00548,30/08/2024,2024-2,Ingeniería,Ingeniería Mecánica,Dificultad académica,Tutoría,0.5,4,Medellín
+CASO00549,03/08/2024,2024-2,Ingeniería,Ingeniería Electrónica,Problemas personales,Académica,28.8,5,Medellín
+CASO00550,22/06/2024,2024-1,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Tutoría,21.6,5,Medellín
+CASO00551,04/03/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Psicosocial,10.4,2,Apartadó
+CASO00552,04/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Mesa de ayuda,18.9,5,Itagüí
+CASO00553,10/08/2024,2024-2,Ciencias Económicas,Contaduría,Soporte técnico,Tutoría,20.5,4,Apartadó
+CASO00554,23/06/2024,2024-1,Ciencias Económicas,Administración,Soporte técnico,Tutoría,18.3,5,Rionegro
+CASO00555,07/05/2024,2024-1,Artes y Humanidades,Comunicación,Orientación de matrícula,Académica,23.4,5,Rionegro
+CASO00556,11/11/2024,2024-2,Artes y Humanidades,Comunicación,Acceso a plataforma,Académica,21.5,4,Rionegro
+CASO00557,23/03/2024,2024-1,Ciencias Económicas,Economía,Problemas personales,Psicosocial,7.0,5,Apartadó
+CASO00558,25/06/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Tutoría,22.4,3,Apartadó
+CASO00559,26/09/2024,2024-2,Artes y Humanidades,Comunicación,Soporte técnico,Mesa de ayuda,42.5,4,Itagüí
+CASO00560,20/03/2024,2024-1,Ingeniería,Ingeniería Mecánica,Problemas personales,Tutoría,21.9,3,Medellín
+CASO00561,17/04/2024,2024-1,Ciencias Económicas,Administración,Acceso a plataforma,Psicosocial,4.6,4,Rionegro
+CASO00562,27/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Problemas personales,Académica,19.2,5,Itagüí
+CASO00563,25/11/2024,2024-2,Artes y Humanidades,Artes Escénicas,Dificultad académica,Psicosocial,17.7,3,Itagüí
+CASO00564,13/05/2024,2024-1,Artes y Humanidades,Artes Escénicas,Dificultad académica,Tutoría,24.0,3,Itagüí
+CASO00565,29/07/2024,2024-2,Artes y Humanidades,Comunicación,Soporte técnico,Tutoría,35.5,2,Medellín
+CASO00566,18/02/2024,2024-1,Artes y Humanidades,Comunicación,Problemas personales,Psicosocial,26.5,3,Apartadó
+CASO00567,13/11/2024,2024-2,Ciencias Económicas,Economía,Acceso a plataforma,Psicosocial,19.9,4,Apartadó
+CASO00568,08/04/2024,2024-1,Ciencias Económicas,Contaduría,Orientación de matrícula,Académica,32.5,2,Apartadó
+CASO00569,20/10/2024,2024-2,Artes y Humanidades,Comunicación,Problemas personales,Tutoría,43.3,5,Itagüí
+CASO00570,29/04/2024,2024-1,Ciencias Económicas,Administración,Orientación de matrícula,Mesa de ayuda,29.2,5,Itagüí
+CASO00571,24/10/2024,2024-2,Ingeniería,Ingeniería Electrónica,Problemas personales,Académica,29.9,3,Medellín
+CASO00572,15/05/2024,2024-1,Ingeniería,Ingeniería Electrónica,Dificultad académica,Mesa de ayuda,59.2,2,Medellín
+CASO00573,30/10/2024,2024-2,Ingeniería,Ingeniería Electrónica,Dificultad académica,Tutoría,46.6,5,Rionegro
+CASO00574,07/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Académica,35.4,5,Itagüí
+CASO00575,28/01/2024,2024-1,Ciencias Económicas,Economía,Soporte técnico,Mesa de ayuda,20.0,4,Apartadó
+CASO00576,30/01/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Tutoría,20.7,3,Medellín
+CASO00577,01/06/2024,2024-1,Ingeniería,Ingeniería Mecánica,Dificultad académica,Tutoría,37.4,2,Rionegro
+CASO00578,22/05/2024,2024-1,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Académica,19.5,3,Medellín
+CASO00579,05/06/2024,2024-1,Artes y Humanidades,Comunicación,Dificultad académica,Académica,18.2,2,Apartadó
+CASO00580,06/02/2024,2024-1,Ingeniería,Ingeniería Mecánica,Dificultad académica,Académica,10.8,4,Itagüí
+CASO00581,10/04/2024,2024-1,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Tutoría,34.6,2,Apartadó
+CASO00582,04/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Psicosocial,7.6,2,Apartadó
+CASO00583,12/03/2024,2024-1,Artes y Humanidades,Artes Escénicas,Problemas personales,Académica,37.5,4,Itagüí
+CASO00584,27/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Problemas personales,Mesa de ayuda,31.9,4,Rionegro
+CASO00585,16/09/2024,2024-2,Artes y Humanidades,Artes Escénicas,Problemas personales,Psicosocial,24.5,4,Rionegro
+CASO00586,27/02/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Mesa de ayuda,27.4,5,Medellín
+CASO00587,29/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Mesa de ayuda,8.5,4,Apartadó
+CASO00588,05/05/2024,2024-1,Artes y Humanidades,Comunicación,Problemas personales,Psicosocial,42.2,4,Apartadó
+CASO00589,07/12/2024,2024-2,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Psicosocial,30.0,2,Apartadó
+CASO00590,26/02/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Orientación de matrícula,Académica,21.3,4,Itagüí
+CASO00591,29/01/2024,2024-1,Artes y Humanidades,Comunicación,Dificultad académica,Psicosocial,24.1,2,Rionegro
+CASO00592,27/06/2024,2024-1,Artes y Humanidades,Comunicación,Dificultad académica,Tutoría,32.7,4,Rionegro
+CASO00593,21/01/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Orientación de matrícula,Tutoría,27.3,4,Rionegro
+CASO00594,21/10/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Académica,6.1,4,Rionegro
+CASO00595,18/08/2024,2024-2,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Psicosocial,15.8,4,Medellín
+CASO00596,30/09/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Psicosocial,11.3,5,Itagüí
+CASO00597,29/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Problemas personales,Tutoría,30.3,5,Itagüí
+CASO00598,07/05/2024,2024-1,Artes y Humanidades,Artes Escénicas,Problemas personales,Académica,29.9,3,Apartadó
+CASO00599,20/09/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Orientación de matrícula,Mesa de ayuda,13.9,3,Medellín
+CASO00600,30/08/2024,2024-2,Ciencias Económicas,Contaduría,Acceso a plataforma,Académica,15.6,5,Medellín
+CASO00601,23/05/2024,2024-1,Ciencias Económicas,Economía,Orientación de matrícula,Mesa de ayuda,36.7,2,Apartadó
+CASO00602,27/04/2024,2024-1,Ingeniería,Ingeniería Electrónica,Dificultad académica,Tutoría,30.9,3,Itagüí
+CASO00603,17/09/2024,2024-2,Ciencias Económicas,Contaduría,Soporte técnico,Psicosocial,21.7,2,Apartadó
+CASO00604,31/10/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Orientación de matrícula,Mesa de ayuda,39.2,2,Rionegro
+CASO00605,20/05/2024,2024-1,Ciencias Económicas,Administración,Soporte técnico,Psicosocial,10.9,5,Medellín
+CASO00606,01/10/2024,2024-2,Ciencias Económicas,Economía,Problemas personales,Mesa de ayuda,36.0,2,Rionegro
+CASO00607,27/01/2024,2024-1,Ciencias Económicas,Economía,Acceso a plataforma,Mesa de ayuda,25.4,4,Rionegro
+CASO00608,17/11/2024,2024-2,Artes y Humanidades,Comunicación,Orientación de matrícula,Académica,40.6,3,Itagüí
+CASO00609,07/11/2024,2024-2,Ciencias Económicas,Administración,Problemas personales,Académica,39.0,5,Medellín
+CASO00610,04/09/2024,2024-2,Ingeniería,Ingeniería Mecánica,Acceso a plataforma,Académica,13.9,2,Itagüí
+CASO00611,16/05/2024,2024-1,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Mesa de ayuda,10.5,3,Itagüí
+CASO00612,03/09/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Tutoría,33.0,5,Apartadó
+CASO00613,30/08/2024,2024-2,Artes y Humanidades,Comunicación,Dificultad académica,Académica,21.4,5,Medellín
+CASO00614,26/03/2024,2024-1,Ciencias Económicas,Economía,Soporte técnico,Tutoría,44.7,3,Rionegro
+CASO00615,27/07/2024,2024-2,Ciencias Económicas,Administración,Problemas personales,Mesa de ayuda,30.7,3,Rionegro
+CASO00616,11/06/2024,2024-1,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Psicosocial,24.1,5,Rionegro
+CASO00617,14/03/2024,2024-1,Ingeniería,Ingeniería Mecánica,Problemas personales,Tutoría,42.4,2,Itagüí
+CASO00618,17/06/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Tutoría,22.9,5,Medellín
+CASO00619,15/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Tutoría,17.0,5,Itagüí
+CASO00620,18/02/2024,2024-1,Ciencias Económicas,Contaduría,Dificultad académica,Tutoría,2.1,4,Itagüí
+CASO00621,20/06/2024,2024-1,Ingeniería,Ingeniería Electrónica,Problemas personales,Académica,21.1,2,Apartadó
+CASO00622,18/03/2024,2024-1,Ciencias Económicas,Contaduría,Acceso a plataforma,Tutoría,30.3,3,Itagüí
+CASO00623,25/05/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Psicosocial,12.2,5,Itagüí
+CASO00624,06/04/2024,2024-1,Ciencias Económicas,Administración,Orientación de matrícula,Psicosocial,24.0,3,Rionegro
+CASO00625,28/03/2024,2024-1,Ciencias Económicas,Economía,Orientación de matrícula,Académica,6.3,3,Apartadó
+CASO00626,12/05/2024,2024-1,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Psicosocial,11.3,3,Medellín
+CASO00627,20/07/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Tutoría,34.6,4,Rionegro
+CASO00628,14/06/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Académica,37.2,2,Itagüí
+CASO00629,13/05/2024,2024-1,Ingeniería,Ingeniería Electrónica,Problemas personales,Académica,50.4,5,Itagüí
+CASO00630,29/01/2024,2024-1,Ciencias Económicas,Contaduría,Soporte técnico,Académica,30.8,3,Itagüí
+CASO00631,21/07/2024,2024-2,Artes y Humanidades,Artes Escénicas,Soporte técnico,Mesa de ayuda,16.9,4,Rionegro
+CASO00632,06/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Mesa de ayuda,28.2,5,Apartadó
+CASO00633,11/02/2024,2024-1,Ciencias Económicas,Administración,Orientación de matrícula,Psicosocial,13.5,2,Rionegro
+CASO00634,14/03/2024,2024-1,Ciencias Económicas,Economía,Acceso a plataforma,Mesa de ayuda,27.8,4,Apartadó
+CASO00635,17/06/2024,2024-1,Ciencias Económicas,Contaduría,Problemas personales,Mesa de ayuda,8.1,5,Apartadó
+CASO00636,26/06/2024,2024-1,Ciencias Económicas,Administración,Problemas personales,Académica,17.9,3,Rionegro
+CASO00637,09/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Problemas personales,Psicosocial,45.4,5,Medellín
+CASO00638,04/03/2024,2024-1,Ciencias Económicas,Contaduría,Soporte técnico,Mesa de ayuda,1.5,4,Medellín
+CASO00639,10/06/2024,2024-1,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Mesa de ayuda,45.9,4,Rionegro
+CASO00640,03/05/2024,2024-1,Artes y Humanidades,Comunicación,Acceso a plataforma,Psicosocial,8.2,5,Rionegro
+CASO00641,22/11/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Tutoría,19.3,3,Apartadó
+CASO00642,21/04/2024,2024-1,Ciencias Económicas,Administración,Orientación de matrícula,Psicosocial,18.3,2,Itagüí
+CASO00643,11/09/2024,2024-2,Ingeniería,Ingeniería Electrónica,Soporte técnico,Tutoría,10.9,4,Itagüí
+CASO00644,25/11/2024,2024-2,Ciencias Económicas,Contaduría,Dificultad académica,Psicosocial,26.9,4,Rionegro
+CASO00645,12/09/2024,2024-2,Artes y Humanidades,Comunicación,Orientación de matrícula,Tutoría,35.8,5,Rionegro
+CASO00646,27/09/2024,2024-2,Artes y Humanidades,Artes Escénicas,Soporte técnico,Mesa de ayuda,17.5,2,Apartadó
+CASO00647,12/05/2024,2024-1,Ingeniería,Ingeniería Mecánica,Dificultad académica,Psicosocial,23.8,4,Itagüí
+CASO00648,28/07/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Tutoría,30.3,2,Itagüí
+CASO00649,07/03/2024,2024-1,Ingeniería,Ingeniería Electrónica,Problemas personales,Académica,32.4,2,Itagüí
+CASO00650,27/09/2024,2024-2,Artes y Humanidades,Artes Escénicas,Soporte técnico,Académica,6.1,3,Medellín
+CASO00651,26/01/2024,2024-1,Ingeniería,Ingeniería Electrónica,Dificultad académica,Tutoría,24.7,2,Rionegro
+CASO00652,26/02/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Tutoría,7.9,4,Medellín
+CASO00653,13/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Psicosocial,47.9,3,Itagüí
+CASO00654,03/04/2024,2024-1,Ciencias Económicas,Administración,Problemas personales,Psicosocial,25.0,2,Medellín
+CASO00655,30/09/2024,2024-2,Ingeniería,Ingeniería Mecánica,Acceso a plataforma,Tutoría,5.6,2,Medellín
+CASO00656,10/12/2024,2024-2,Ingeniería,Ingeniería Mecánica,Problemas personales,Psicosocial,34.3,4,Medellín
+CASO00657,30/01/2024,2024-1,Ciencias Económicas,Administración,Orientación de matrícula,Psicosocial,26.1,2,Itagüí
+CASO00658,14/03/2024,2024-1,Ciencias Económicas,Administración,Acceso a plataforma,Tutoría,45.3,4,Itagüí
+CASO00659,13/05/2024,2024-1,Ciencias Económicas,Economía,Acceso a plataforma,Tutoría,49.4,2,Medellín
+CASO00660,10/05/2024,2024-1,Ingeniería,Ingeniería Electrónica,Dificultad académica,Mesa de ayuda,16.4,2,Rionegro
+CASO00661,06/02/2024,2024-1,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Académica,50.5,3,Itagüí
+CASO00662,06/03/2024,2024-1,Ciencias Económicas,Contaduría,Acceso a plataforma,Psicosocial,17.8,3,Medellín
+CASO00663,24/07/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Académica,21.5,3,Rionegro
+CASO00664,28/01/2024,2024-1,Ciencias Económicas,Contaduría,Dificultad académica,Académica,35.2,4,Medellín
+CASO00665,06/05/2024,2024-1,Ciencias Económicas,Administración,Soporte técnico,Mesa de ayuda,13.9,4,Itagüí
+CASO00666,15/02/2024,2024-1,Ciencias Económicas,Economía,Problemas personales,Académica,29.7,2,Itagüí
+CASO00667,08/09/2024,2024-2,Artes y Humanidades,Comunicación,Soporte técnico,Mesa de ayuda,25.5,3,Medellín
+CASO00668,30/08/2024,2024-2,Artes y Humanidades,Comunicación,Dificultad académica,Psicosocial,38.2,3,Medellín
+CASO00669,30/03/2024,2024-1,Ciencias Económicas,Administración,Soporte técnico,Psicosocial,24.4,4,Itagüí
+CASO00670,13/09/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Psicosocial,31.2,3,Medellín
+CASO00671,29/02/2024,2024-1,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Psicosocial,19.5,4,Rionegro
+CASO00672,16/03/2024,2024-1,Ingeniería,Ingeniería Mecánica,Dificultad académica,Mesa de ayuda,1.9,4,Apartadó
+CASO00673,15/04/2024,2024-1,Artes y Humanidades,Comunicación,Dificultad académica,Mesa de ayuda,27.6,3,Rionegro
+CASO00674,25/05/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Tutoría,35.0,2,Rionegro
+CASO00675,01/05/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Problemas personales,Mesa de ayuda,12.2,4,Medellín
+CASO00676,11/09/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Psicosocial,28.1,2,Itagüí
+CASO00677,13/12/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Problemas personales,Mesa de ayuda,12.8,2,Rionegro
+CASO00678,08/05/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Académica,45.8,5,Rionegro
+CASO00679,09/02/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Tutoría,12.9,4,Rionegro
+CASO00680,23/04/2024,2024-1,Ciencias Económicas,Economía,Soporte técnico,Tutoría,16.1,2,Rionegro
+CASO00681,24/10/2024,2024-2,Ingeniería,Ingeniería Mecánica,Problemas personales,Académica,24.0,5,Itagüí
+CASO00682,19/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Problemas personales,Psicosocial,30.4,4,Apartadó
+CASO00683,03/04/2024,2024-1,Ingeniería,Ingeniería Mecánica,Problemas personales,Académica,6.7,4,Rionegro
+CASO00684,17/03/2024,2024-1,Ciencias Económicas,Economía,Acceso a plataforma,Mesa de ayuda,31.9,2,Rionegro
+CASO00685,06/05/2024,2024-1,Artes y Humanidades,Comunicación,Acceso a plataforma,Académica,38.6,5,Rionegro
+CASO00686,26/08/2024,2024-2,Ingeniería,Ingeniería Electrónica,Soporte técnico,Psicosocial,19.9,2,Apartadó
+CASO00687,07/02/2024,2024-1,Ciencias Económicas,Contaduría,Acceso a plataforma,Tutoría,28.8,3,Medellín
+CASO00688,04/05/2024,2024-1,Ciencias Económicas,Administración,Orientación de matrícula,Académica,28.4,4,Itagüí
+CASO00689,18/06/2024,2024-1,Ciencias Económicas,Economía,Soporte técnico,Tutoría,26.5,4,Itagüí
+CASO00690,14/11/2024,2024-2,Ingeniería,Ingeniería Mecánica,Acceso a plataforma,Psicosocial,39.0,5,Itagüí
+CASO00691,10/12/2024,2024-2,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Mesa de ayuda,13.8,3,Apartadó
+CASO00692,28/08/2024,2024-2,Artes y Humanidades,Comunicación,Orientación de matrícula,Académica,50.9,2,Rionegro
+CASO00693,23/01/2024,2024-1,Artes y Humanidades,Artes Escénicas,Soporte técnico,Psicosocial,21.1,3,Rionegro
+CASO00694,18/02/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Soporte técnico,Académica,22.6,2,Medellín
+CASO00695,05/03/2024,2024-1,Ciencias Económicas,Contaduría,Problemas personales,Psicosocial,22.8,3,Itagüí
+CASO00696,11/09/2024,2024-2,Ciencias Económicas,Contaduría,Dificultad académica,Psicosocial,20.8,5,Apartadó
+CASO00697,03/05/2024,2024-1,Ingeniería,Ingeniería Mecánica,Acceso a plataforma,Mesa de ayuda,28.7,4,Itagüí
+CASO00698,08/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Problemas personales,Mesa de ayuda,34.6,2,Medellín
+CASO00699,11/08/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Psicosocial,23.0,3,Rionegro
+CASO00700,04/08/2024,2024-2,Ingeniería,Ingeniería Mecánica,Dificultad académica,Académica,34.2,2,Apartadó
+CASO00701,30/08/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Mesa de ayuda,16.2,5,Itagüí
+CASO00702,10/10/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Problemas personales,Tutoría,23.3,3,Medellín
+CASO00703,13/09/2024,2024-2,Ciencias Económicas,Administración,Problemas personales,Mesa de ayuda,48.9,2,Rionegro
+CASO00704,06/03/2024,2024-1,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Psicosocial,12.1,5,Itagüí
+CASO00705,07/02/2024,2024-1,Ciencias Económicas,Contaduría,Dificultad académica,Tutoría,15.9,5,Medellín
+CASO00706,18/06/2024,2024-1,Artes y Humanidades,Comunicación,Problemas personales,Académica,23.3,3,Rionegro
+CASO00707,04/11/2024,2024-2,Ingeniería,Ingeniería Electrónica,Soporte técnico,Mesa de ayuda,7.7,5,Apartadó
+CASO00708,24/05/2024,2024-1,Ciencias Económicas,Economía,Problemas personales,Tutoría,9.5,2,Medellín
+CASO00709,08/10/2024,2024-2,Ciencias Económicas,Administración,Problemas personales,Psicosocial,30.8,5,Itagüí
+CASO00710,14/09/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Tutoría,8.0,2,Rionegro
+CASO00711,23/01/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Mesa de ayuda,25.5,2,Medellín
+CASO00712,24/02/2024,2024-1,Ciencias Económicas,Contaduría,Orientación de matrícula,Psicosocial,20.0,5,Medellín
+CASO00713,26/11/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Orientación de matrícula,Académica,33.1,3,Apartadó
+CASO00714,25/04/2024,2024-1,Ciencias Económicas,Economía,Dificultad académica,Académica,0.5,2,Rionegro
+CASO00715,09/09/2024,2024-2,Ciencias Económicas,Administración,Acceso a plataforma,Académica,36.7,2,Apartadó
+CASO00716,23/07/2024,2024-2,Ciencias Económicas,Economía,Problemas personales,Tutoría,8.3,2,Rionegro
+CASO00717,17/09/2024,2024-2,Ciencias Económicas,Administración,Problemas personales,Psicosocial,29.4,5,Rionegro
+CASO00718,30/03/2024,2024-1,Ingeniería,Ingeniería Electrónica,Dificultad académica,Académica,23.7,3,Apartadó
+CASO00719,25/08/2024,2024-2,Artes y Humanidades,Comunicación,Soporte técnico,Académica,28.1,5,Itagüí
+CASO00720,19/07/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Académica,31.4,5,Apartadó
+CASO00721,29/01/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Mesa de ayuda,38.5,4,Apartadó
+CASO00722,10/11/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Tutoría,31.1,4,Apartadó
+CASO00723,25/07/2024,2024-2,Ciencias Económicas,Economía,Problemas personales,Mesa de ayuda,24.1,2,Itagüí
+CASO00724,27/02/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Tutoría,16.5,3,Medellín
+CASO00725,21/10/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Problemas personales,Mesa de ayuda,11.9,5,Rionegro
+CASO00726,28/02/2024,2024-1,Ciencias Económicas,Economía,Orientación de matrícula,Académica,28.5,4,Medellín
+CASO00727,16/05/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Tutoría,36.4,4,Apartadó
+CASO00728,04/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Soporte técnico,Psicosocial,26.9,2,Apartadó
+CASO00729,11/10/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Académica,20.8,3,Apartadó
+CASO00730,15/11/2024,2024-2,Ciencias Económicas,Economía,Soporte técnico,Académica,48.1,5,Medellín
+CASO00731,24/10/2024,2024-2,Artes y Humanidades,Comunicación,Problemas personales,Psicosocial,43.1,2,Itagüí
+CASO00732,28/02/2024,2024-1,Ciencias Económicas,Contaduría,Orientación de matrícula,Académica,32.7,5,Medellín
+CASO00733,04/12/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Tutoría,9.8,3,Medellín
+CASO00734,11/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Académica,30.2,3,Apartadó
+CASO00735,15/12/2024,2024-2,Artes y Humanidades,Comunicación,Soporte técnico,Académica,34.6,4,Rionegro
+CASO00736,09/06/2024,2024-1,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Académica,24.3,5,Rionegro
+CASO00737,19/04/2024,2024-1,Artes y Humanidades,Artes Escénicas,Soporte técnico,Psicosocial,15.1,4,Itagüí
+CASO00738,29/11/2024,2024-2,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Psicosocial,27.6,3,Rionegro
+CASO00739,02/11/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Académica,8.1,5,Rionegro
+CASO00740,15/10/2024,2024-2,Artes y Humanidades,Diseño Gráfico,Acceso a plataforma,Tutoría,26.8,3,Itagüí
+CASO00741,08/08/2024,2024-2,Ciencias Económicas,Contaduría,Dificultad académica,Tutoría,25.4,4,Medellín
+CASO00742,17/06/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Mesa de ayuda,26.1,3,Rionegro
+CASO00743,30/01/2024,2024-1,Artes y Humanidades,Artes Escénicas,Dificultad académica,Académica,0.5,5,Medellín
+CASO00744,04/05/2024,2024-1,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Tutoría,34.2,4,Rionegro
+CASO00745,20/04/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Tutoría,43.6,3,Rionegro
+CASO00746,23/09/2024,2024-2,Ciencias Económicas,Administración,Problemas personales,Mesa de ayuda,11.0,4,Medellín
+CASO00747,10/08/2024,2024-2,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Psicosocial,18.3,3,Apartadó
+CASO00748,21/11/2024,2024-2,Ciencias Económicas,Administración,Soporte técnico,Psicosocial,13.0,3,Apartadó
+CASO00749,11/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Psicosocial,38.8,2,Apartadó
+CASO00750,14/06/2024,2024-1,Ciencias Económicas,Administración,Dificultad académica,Tutoría,28.3,5,Medellín
+CASO00751,28/08/2024,2024-2,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Tutoría,14.6,5,Apartadó
+CASO00752,01/12/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Problemas personales,Académica,47.9,4,Medellín
+CASO00753,08/12/2024,2024-2,Ingeniería,Ingeniería Electrónica,Dificultad académica,Académica,28.0,4,Apartadó
+CASO00754,14/03/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Psicosocial,12.1,2,Rionegro
+CASO00755,16/09/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Dificultad académica,Académica,31.1,2,Rionegro
+CASO00756,20/10/2024,2024-2,Artes y Humanidades,Comunicación,Problemas personales,Tutoría,37.9,4,Apartadó
+CASO00757,31/05/2024,2024-1,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Psicosocial,55.3,2,Medellín
+CASO00758,05/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Académica,12.2,3,Itagüí
+CASO00759,27/06/2024,2024-1,Ciencias Económicas,Economía,Dificultad académica,Académica,8.4,2,Rionegro
+CASO00760,28/05/2024,2024-1,Artes y Humanidades,Artes Escénicas,Problemas personales,Psicosocial,12.4,3,Rionegro
+CASO00761,06/06/2024,2024-1,Artes y Humanidades,Artes Escénicas,Dificultad académica,Tutoría,23.0,3,Apartadó
+CASO00762,22/07/2024,2024-2,Ciencias Económicas,Contaduría,Dificultad académica,Psicosocial,22.1,2,Medellín
+CASO00763,09/05/2024,2024-1,Ciencias Económicas,Economía,Dificultad académica,Tutoría,0.5,3,Itagüí
+CASO00764,11/06/2024,2024-1,Ciencias Económicas,Contaduría,Problemas personales,Académica,25.2,5,Apartadó
+CASO00765,29/03/2024,2024-1,Ciencias Económicas,Contaduría,Problemas personales,Académica,12.1,3,Rionegro
+CASO00766,25/10/2024,2024-2,Ciencias Económicas,Economía,Orientación de matrícula,Tutoría,7.1,5,Medellín
+CASO00767,11/03/2024,2024-1,Ingeniería,Ingeniería Electrónica,Acceso a plataforma,Mesa de ayuda,12.9,4,Rionegro
+CASO00768,02/02/2024,2024-1,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Tutoría,22.2,4,Itagüí
+CASO00769,25/01/2024,2024-1,Ciencias Económicas,Economía,Soporte técnico,Psicosocial,28.0,3,Apartadó
+CASO00770,03/11/2024,2024-2,Ciencias Económicas,Administración,Problemas personales,Académica,18.0,2,Medellín
+CASO00771,27/08/2024,2024-2,Ingeniería,Ingeniería Mecánica,Orientación de matrícula,Psicosocial,41.4,5,Medellín
+CASO00772,13/05/2024,2024-1,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Psicosocial,32.0,4,Medellín
+CASO00773,23/06/2024,2024-1,Artes y Humanidades,Artes Escénicas,Problemas personales,Psicosocial,18.6,2,Medellín
+CASO00774,24/07/2024,2024-2,Ciencias Económicas,Administración,Orientación de matrícula,Mesa de ayuda,40.2,4,Apartadó
+CASO00775,12/03/2024,2024-1,Artes y Humanidades,Comunicación,Problemas personales,Académica,0.5,4,Medellín
+CASO00776,12/03/2024,2024-1,Artes y Humanidades,Artes Escénicas,Dificultad académica,Mesa de ayuda,23.9,3,Rionegro
+CASO00777,24/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Orientación de matrícula,Académica,12.8,2,Medellín
+CASO00778,03/08/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Psicosocial,28.1,4,Rionegro
+CASO00779,26/11/2024,2024-2,Ciencias Económicas,Economía,Dificultad académica,Académica,50.5,3,Apartadó
+CASO00780,21/10/2024,2024-2,Ingeniería,Ingeniería Mecánica,Acceso a plataforma,Mesa de ayuda,14.8,2,Apartadó
+CASO00781,09/12/2024,2024-2,Ciencias Económicas,Administración,Dificultad académica,Mesa de ayuda,16.6,3,Itagüí
+CASO00782,07/03/2024,2024-1,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Tutoría,16.9,5,Itagüí
+CASO00783,18/10/2024,2024-2,Artes y Humanidades,Artes Escénicas,Acceso a plataforma,Académica,37.8,4,Rionegro
+CASO00784,17/06/2024,2024-1,Ingeniería,Ingeniería Mecánica,Problemas personales,Tutoría,19.5,5,Apartadó
+CASO00785,07/11/2024,2024-2,Artes y Humanidades,Comunicación,Orientación de matrícula,Académica,21.1,3,Medellín
+CASO00786,09/08/2024,2024-2,Ingeniería,Ingeniería Mecánica,Dificultad académica,Mesa de ayuda,38.9,5,Medellín
+CASO00787,07/11/2024,2024-2,Ciencias Económicas,Economía,Orientación de matrícula,Tutoría,31.6,5,Medellín
+CASO00788,28/10/2024,2024-2,Ciencias Económicas,Economía,Dificultad académica,Tutoría,38.7,3,Rionegro
+CASO00789,22/07/2024,2024-2,Ingeniería,Ingeniería Electrónica,Orientación de matrícula,Psicosocial,34.2,2,Rionegro
+CASO00790,15/12/2024,2024-2,Ciencias Económicas,Economía,Orientación de matrícula,Académica,30.9,5,Apartadó
+CASO00791,23/01/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Problemas personales,Mesa de ayuda,19.0,2,Itagüí
+CASO00792,23/02/2024,2024-1,Ciencias Económicas,Economía,Problemas personales,Tutoría,2.7,3,Medellín
+CASO00793,04/03/2024,2024-1,Artes y Humanidades,Diseño Gráfico,Dificultad académica,Psicosocial,23.7,4,Rionegro
+CASO00794,05/11/2024,2024-2,Ingeniería,Ingeniería Electrónica,Problemas personales,Psicosocial,30.0,4,Apartadó
+CASO00795,19/08/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Soporte técnico,Tutoría,34.8,5,Itagüí
+CASO00796,29/08/2024,2024-2,Artes y Humanidades,Comunicación,Dificultad académica,Mesa de ayuda,34.8,3,Itagüí
+CASO00797,25/11/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Problemas personales,Mesa de ayuda,28.1,4,Medellín
+CASO00798,31/10/2024,2024-2,Ingeniería,Ingeniería de Sistemas,Acceso a plataforma,Psicosocial,3.5,5,Apartadó
+CASO00799,24/08/2024,2024-2,Ingeniería,Ingeniería Mecánica,Soporte técnico,Tutoría,0.5,3,Rionegro
+CASO00800,19/02/2024,2024-1,Artes y Humanidades,Artes Escénicas,Orientación de matrícula,Mesa de ayuda,39.1,4,Rionegro

@@ -1,0 +1,101 @@
+id_curso,nombre_curso,id_docente,semestre,facultad,programa,antiguedad_docente_semestres,curso_entregado,creditos
+CUR0001,Estadística,DOC0145,2024-2,Ingeniería,Ingeniería Electrónica,3,1,2
+CUR0002,Electrónica Básica,DOC0073,2024-1,Ciencias Económicas,Administración,3,1,4
+CUR0003,Cálculo I,DOC0114,2024-1,Ciencias Económicas,Administración,6,1,3
+CUR0004,Electrónica Básica,DOC0111,2024-1,Ciencias Económicas,Economía,4,1,4
+CUR0005,Programación I,DOC0005,2024-2,Artes Y Humanidades,Artes Escénicas,5,1,5
+CUR0006,Electrónica Básica,DOC0121,2024-2,Artes Y Humanidades,Artes Escénicas,7,1,2
+CUR0007,Cálculo I,DOC0040,2024-1,Artes Y Humanidades,Comunicación,6,1,5
+CUR0008,Ecuaciones Diferenciales,DOC0140,2024-1,Artes Y Humanidades,Comunicación,5,1,5
+CUR0009,Ecuaciones Diferenciales,DOC0041,2024-1,Artes Y Humanidades,Comunicación,4,1,2
+CUR0010,Contabilidad I,DOC0116,2024-1,Ingeniería,Ingeniería Electrónica,7,1,2
+CUR0011,Diseño Digital,DOC0119,2024-1,Ciencias Económicas,Administración,6,1,5
+CUR0012,Cálculo I,DOC0031,2024-1,Artes Y Humanidades,Artes Escénicas,1,1,5
+CUR0013,Programación I,DOC0057,2024-2,Ciencias Económicas,Contaduría,5,1,5
+CUR0014,Programación I,DOC0088,2024-1,Artes Y Humanidades,Comunicación,1,1,3
+CUR0015,Guion I,DOC0082,2024-2,Ciencias Económicas,Contaduría,3,0,5
+CUR0016,Ecuaciones Diferenciales,DOC0081,2024-1,Ciencias Económicas,Economía,1,1,4
+CUR0017,Cálculo I,DOC0115,2024-1,Ingeniería,Ingeniería Electrónica,5,1,2
+CUR0018,Teoría Del Color,DOC0052,2024-2,Ciencias Económicas,Administración,7,1,2
+CUR0019,Física I,DOC0058,2024-2,Ciencias Económicas,Administración,1,1,5
+CUR0020,Macroeconomía,DOC0024,2024-2,Artes Y Humanidades,Comunicación,5,1,3
+CUR0021,Ecuaciones Diferenciales,DOC0146,2024-1,Ciencias Económicas,Contaduría,1,1,2
+CUR0022,Álgebra Lineal,DOC0134,2024-2,Ingeniería,Ingeniería De Sistemas,4,0,5
+CUR0023,Programación I,DOC0115,2024-1,Ingeniería,Ingeniería De Sistemas,1,1,3
+CUR0024,Contabilidad I,DOC0126,2024-2,Ingeniería,Ingeniería Electrónica,3,1,5
+CUR0025,Álgebra Lineal,DOC0063,2024-1,Ciencias Económicas,Economía,6,1,5
+CUR0026,Contabilidad I,DOC0098,2024-1,Ingeniería,Ingeniería De Sistemas,1,1,4
+CUR0027,Programación I,DOC0057,2024-2,Ingeniería,Ingeniería Mecánica,4,1,5
+CUR0028,Microeconomía,DOC0042,2024-2,Ingeniería,Ingeniería De Sistemas,4,0,2
+CUR0029,Teoría Del Color,DOC0109,2024-2,Ciencias Económicas,Contaduría,1,1,4
+CUR0030,Microeconomía,DOC0084,2024-1,Artes Y Humanidades,Artes Escénicas,5,1,3
+CUR0031,Álgebra Lineal,DOC0081,2024-2,Ingeniería,Ingeniería Mecánica,1,1,4
+CUR0032,Electrónica Básica,DOC0015,2024-1,Ciencias Económicas,Contaduría,6,1,3
+CUR0033,Estadística,DOC0020,2024-2,Ingeniería,Ingeniería De Sistemas,6,1,4
+CUR0034,Álgebra Lineal,DOC0006,2024-2,Ciencias Económicas,Economía,3,0,4
+CUR0035,Microeconomía,DOC0033,2024-2,Ciencias Económicas,Contaduría,2,1,3
+CUR0036,Programación I,DOC0069,2024-2,Ciencias Económicas,Contaduría,5,0,5
+CUR0037,Contabilidad I,DOC0024,2024-2,Ciencias Económicas,Economía,5,1,4
+CUR0038,Ecuaciones Diferenciales,DOC0063,2024-1,Ingeniería,Ingeniería De Sistemas,2,1,2
+CUR0039,Teoría Del Color,DOC0032,2024-2,Ciencias Económicas,Contaduría,6,1,4
+CUR0040,Programación I,DOC0093,2024-2,Ingeniería,Ingeniería Mecánica,5,1,4
+CUR0041,Diseño Digital,DOC0024,2024-1,Ingeniería,Ingeniería Mecánica,3,1,2
+CUR0042,Cálculo I,DOC0086,2024-2,Artes Y Humanidades,Artes Escénicas,5,1,2
+CUR0043,Bases De Datos,DOC0115,2024-2,Ciencias Económicas,Economía,1,1,5
+CUR0044,Álgebra Lineal,DOC0044,2024-1,Artes Y Humanidades,Comunicación,3,1,4
+CUR0045,Cálculo I,DOC0019,2024-1,Artes Y Humanidades,Artes Escénicas,6,1,5
+CUR0046,Termodinámica,DOC0130,2024-2,Ingeniería,Ingeniería Electrónica,3,1,2
+CUR0047,Guion I,DOC0068,2024-1,Ciencias Económicas,Administración,7,1,3
+CUR0048,Álgebra Lineal,DOC0018,2024-2,Ciencias Económicas,Administración,4,1,4
+CUR0049,Ecuaciones Diferenciales,DOC0077,2024-2,Artes Y Humanidades,Artes Escénicas,3,1,2
+CUR0050,Programación I,DOC0102,2024-1,Ingeniería,Ingeniería De Sistemas,3,0,5
+CUR0051,Ecuaciones Diferenciales,DOC0017,2024-2,Ciencias Económicas,Contaduría,3,1,5
+CUR0052,Microeconomía,DOC0072,2024-1,Artes Y Humanidades,Artes Escénicas,1,1,2
+CUR0053,Estadística,DOC0115,2024-1,Artes Y Humanidades,Comunicación,6,1,4
+CUR0054,Estadística,DOC0016,2024-2,Ciencias Económicas,Economía,4,1,5
+CUR0055,Electrónica Básica,DOC0068,2024-2,Ingeniería,Ingeniería Mecánica,1,1,5
+CUR0056,Electrónica Básica,DOC0142,2024-2,Artes Y Humanidades,Diseño Gráfico,3,1,4
+CUR0057,Electrónica Básica,DOC0011,2024-1,Artes Y Humanidades,Diseño Gráfico,1,1,3
+CUR0058,Ecuaciones Diferenciales,DOC0142,2024-1,Ingeniería,Ingeniería Mecánica,7,1,2
+CUR0059,Física I,DOC0127,2024-1,Ciencias Económicas,Administración,2,1,4
+CUR0060,Contabilidad I,DOC0064,2024-1,Ciencias Económicas,Administración,7,1,3
+CUR0061,Termodinámica,DOC0054,2024-2,Ciencias Económicas,Administración,2,1,5
+CUR0062,Cálculo I,DOC0056,2024-1,Ciencias Económicas,Contaduría,1,1,2
+CUR0063,Álgebra Lineal,DOC0075,2024-1,Artes Y Humanidades,Comunicación,1,1,3
+CUR0064,Programación I,DOC0037,2024-1,Ingeniería,Ingeniería Mecánica,7,1,4
+CUR0065,Contabilidad I,DOC0137,2024-1,Ingeniería,Ingeniería De Sistemas,5,1,5
+CUR0066,Electrónica Básica,DOC0086,2024-1,Ciencias Económicas,Administración,1,1,2
+CUR0067,Diseño Digital,DOC0101,2024-1,Artes Y Humanidades,Comunicación,1,1,4
+CUR0068,Estadística,DOC0035,2024-1,Artes Y Humanidades,Artes Escénicas,5,1,4
+CUR0069,Diseño Digital,DOC0118,2024-2,Ingeniería,Ingeniería De Sistemas,6,1,5
+CUR0070,Bases De Datos,DOC0106,2024-2,Artes Y Humanidades,Artes Escénicas,3,1,3
+CUR0071,Álgebra Lineal,DOC0104,2024-1,Ingeniería,Ingeniería De Sistemas,7,1,5
+CUR0072,Estadística,DOC0134,2024-1,Ciencias Económicas,Administración,6,1,5
+CUR0073,Cálculo I,DOC0111,2024-2,Ingeniería,Ingeniería Mecánica,3,1,5
+CUR0074,Teoría Del Color,DOC0132,2024-2,Ingeniería,Ingeniería Mecánica,3,1,5
+CUR0075,Bases De Datos,DOC0117,2024-2,Ciencias Económicas,Contaduría,1,0,4
+CUR0076,Física I,DOC0065,2024-1,Artes Y Humanidades,Artes Escénicas,7,1,2
+CUR0077,Electrónica Básica,DOC0028,2024-1,Artes Y Humanidades,Comunicación,5,1,3
+CUR0078,Física I,DOC0044,2024-2,Ingeniería,Ingeniería Electrónica,5,1,5
+CUR0079,Teoría Del Color,DOC0037,2024-2,Artes Y Humanidades,Diseño Gráfico,1,1,2
+CUR0080,Guion I,DOC0011,2024-2,Ciencias Económicas,Economía,2,1,2
+CUR0081,Contabilidad I,DOC0038,2024-2,Ciencias Económicas,Economía,3,1,4
+CUR0082,Guion I,DOC0004,2024-2,Ciencias Económicas,Administración,6,1,3
+CUR0083,Programación I,DOC0042,2024-1,Artes Y Humanidades,Artes Escénicas,5,1,3
+CUR0084,Física I,DOC0145,2024-1,Ciencias Económicas,Economía,4,1,2
+CUR0085,Bases De Datos,DOC0068,2024-2,Artes Y Humanidades,Diseño Gráfico,4,1,3
+CUR0086,Diseño Digital,DOC0118,2024-2,Artes Y Humanidades,Comunicación,5,1,3
+CUR0087,Ecuaciones Diferenciales,DOC0046,2024-2,Artes Y Humanidades,Comunicación,6,1,2
+CUR0088,Electrónica Básica,DOC0047,2024-1,Ingeniería,Ingeniería Electrónica,2,1,3
+CUR0089,Macroeconomía,DOC0009,2024-1,Ingeniería,Ingeniería Electrónica,6,1,2
+CUR0090,Contabilidad I,DOC0133,2024-2,Ciencias Económicas,Administración,7,1,5
+CUR0091,Física I,DOC0137,2024-2,Ingeniería,Ingeniería De Sistemas,1,0,5
+CUR0092,Cálculo I,DOC0091,2024-2,Ciencias Económicas,Contaduría,1,1,5
+CUR0093,Teoría Del Color,DOC0077,2024-2,Ingeniería,Ingeniería Mecánica,2,1,3
+CUR0094,Álgebra Lineal,DOC0130,2024-1,Artes Y Humanidades,Comunicación,5,1,2
+CUR0095,Teoría Del Color,DOC0145,2024-1,Ciencias Económicas,Contaduría,7,0,2
+CUR0096,Contabilidad I,DOC0110,2024-2,Ciencias Económicas,Contaduría,6,1,3
+CUR0097,Diseño Digital,DOC0130,2024-1,Ingeniería,Ingeniería Mecánica,5,1,2
+CUR0098,Álgebra Lineal,DOC0139,2024-2,Ciencias Económicas,Contaduría,5,0,2
+CUR0099,Termodinámica,DOC0011,2024-2,Artes Y Humanidades,Comunicación,5,1,2
+CUR0100,Programación I,DOC0042,2024-2,Artes Y Humanidades,Comunicación,3,1,2
