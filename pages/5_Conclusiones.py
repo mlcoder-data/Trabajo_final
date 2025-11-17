@@ -1,126 +1,150 @@
 import streamlit as st
-import pandas as pd
 
-st.title("🧩 Conclusiones")
-
-@st.cache_data
-def load_data():
-    mat = pd.read_csv("matriculaslimpias.csv")
-    doc = pd.read_csv("docenteslimpios.csv")
-    sup = pd.read_csv("soporte_atenciones_focus.csv")
-    return mat, doc, sup
-
-mat, doc, sup = load_data()
-
-# --------- Cálculos rápidos para poner ejemplos concretos ----------
-mat["es_desercion"] = mat["estado_academico"] == "Cancelado"
-mat["es_reprob"] = mat["estado_academico"] == "Reprobado"
-
-prog_agg = (
-    mat.groupby("programa")
-    .agg(
-        matrículas=("id_estudiante", "count"),
-        deserciones=("es_desercion", "sum"),
-        reprobaciones=("es_reprob", "sum"),
+# ================== HEADER CORPORATIVO ==================
+def header_data_damz():
+    header_html = (
+        '<div style="background: linear-gradient(90deg,#0f172a,#1e293b,#1e3a5f);'
+        'padding: 26px 32px; border-radius: 0 0 22px 22px; border-bottom: 1px solid #111827;'
+        'margin-bottom: 38px; display:flex; justify-content:space-between; align-items:center;'
+        'box-shadow: 0 12px 28px rgba(0,0,0,0.35);">'
+            '<div style="flex:1;">'
+                '<div style="font-size:28px; font-weight:900; letter-spacing:0.08em; '
+                'text-transform:uppercase; color:#bfdbfe;">'
+                    'DATA DAMZ SAS'
+                '</div>'
+                '<div style="font-size:18px; color:#e5e7eb; margin-top:6px; font-weight:300;">'
+                    'Transformamos datos en decisiones para la educación virtual.'
+                '</div>'
+            '</div>'
+            '<div style="flex:1; text-align:right;">'
+                '<div style="font-size:17px; color:#cbd5e1; font-weight:400;">'
+                    'Proyecto analítico · Unidad de Educación Virtual – ITM'
+                '</div>'
+                '<div style="font-size:16px; color:#94a3b8; margin-top:4px;">'
+                    'Periodo de análisis: <b>2024-1 y 2024-2</b>'
+                '</div>'
+            '</div>'
+        '</div>'
     )
-)
-prog_agg["tasa_desercion_%"] = prog_agg["deserciones"] / prog_agg["matrículas"] * 100
-prog_agg["tasa_reprob_%"] = prog_agg["reprobaciones"] / prog_agg["matrículas"] * 100
-top_prog = prog_agg.sort_values("tasa_desercion_%", ascending=False).head(3)
+    st.markdown(header_html, unsafe_allow_html=True)
 
-motivo_agg = sup.groupby("motivo").size().reset_index(name="casos")
-motivo_agg = motivo_agg.sort_values("casos", ascending=False).head(3)
 
-tiempo_prom = sup["tiempo_respuesta_horas"].mean()
-satis_prom = sup["satisfaccion_estudiante"].mean()
+# ================== HEADER + TÍTULO ==================
+header_data_damz()
 
-# --------- Texto estructurado ---------
-st.markdown("## 🎯 Resumen por pregunta de negocio")
-
-# P1
-st.markdown("### P1. ¿Qué programas y asignaturas presentan mayor deserción, reprobación o cancelación?")
-
-if not top_prog.empty:
-    lista_prog = ", ".join(top_prog.index.tolist())
-else:
-    lista_prog = "algunos programas específicos con tasas superiores al promedio"
-
-st.markdown(
-    f"""
-- Los datos muestran que programas como **{lista_prog}** presentan las **tasas más altas de deserción**.
-- En la página de **Matrículas y Desempeño** se identifican también las **asignaturas con mayor concentración de cancelaciones y reprobaciones**, lo que permite priorizar acciones de acompañamiento y revisión curricular.
-"""
-)
-
-# P2
-st.markdown("### P2. ¿Existen patrones entre el rendimiento académico y la carga docente?")
+st.title("📘 Conclusiones y Recomendaciones Estratégicas")
 
 st.markdown(
     """
-- En **Docentes y Cursos** se observa la relación entre **tamaño de grupo** y **nota promedio por curso**.
-- El gráfico de dispersión permite ver si los cursos con grupos muy grandes tienden a presentar:
-  - Menores notas promedio.
-  - Mayores tasas de reprobación o deserción.
-- Además, el análisis por **antigüedad docente** muestra si los docentes con más experiencia concentran mejores resultados o si las diferencias no son tan grandes.
-"""
-)
+    Esta sección presenta una síntesis ejecutiva del análisis realizado por **DATA DAMZ SAS** con base en 
+    las matrículas, el rendimiento académico, la carga docente y la actividad de soporte en los periodos 
+    **2024-1 y 2024-2** de la Unidad de Educación Virtual del ITM.
 
-# P3
-if not motivo_agg.empty:
-    motivos_texto = ", ".join(motivo_agg["motivo"].tolist())
-else:
-    motivos_texto = "los principales motivos registrados en la mesa de ayuda"
-
-st.markdown("### P3. ¿Qué tipos de problemas de soporte son más frecuentes?")
-
-st.markdown(
-    f"""
-- A partir de la tabla **soporte_atenciones_focus**, se identifica que los motivos más frecuentes son:  
-  **{motivos_texto}**.
-- Esta información permite orientar campañas de **prevención, capacitación o mejoras en la plataforma**, 
-  enfocadas en los problemas que realmente viven los estudiantes.
-"""
-)
-
-# P4
-st.markdown("### P4. ¿Qué segmentos de estudiantes muestran mayor propensión al abandono?")
-
-st.markdown(
+    El objetivo es ofrecer una lectura clara y fundamentada que permita a la institución tomar **decisiones 
+    estratégicas basadas en evidencia**, respondiendo directamente a la **Pregunta Focal** del estudio.
     """
-- En la pestaña **Matrículas y Desempeño** se comparan tasas de deserción y reprobación por:
-  - **Programa** y **facultad**.
-  - **Modalidad** (AMV / APV).
-  - **Subperiodo** (A, B, C).
-- Con esto se pueden identificar **segmentos críticos** (por ejemplo, ciertos programas en modalidad APV y subperiodos específicos) donde vale la pena:
-  - Reforzar el acompañamiento académico.
-  - Revisar la carga de contenidos y la evaluación.
-"""
 )
 
-# P5
-st.markdown("### P5. ¿Cuál es el impacto del tiempo de respuesta del soporte en la permanencia?")
-
-st.markdown(
-    f"""
-- El tiempo de respuesta promedio del soporte es de aproximadamente **{tiempo_prom:.1f} horas**, con una satisfacción media de **{satis_prom:.2f} / 5**.
-- En la pestaña **Soporte y Atenciones** se combina la información de:
-  - **Tiempo de respuesta promedio**.
-  - **Número de casos de soporte**.
-  - **Tasa de deserción por semestre–facultad–programa**.
-- El gráfico de dispersión permite discutir si los segmentos con **tiempos de respuesta más altos** tienden a mostrar **mayor deserción**, o si la relación no es tan directa.
-"""
-)
-
+# ================== PREGUNTA FOCAL ==================
 st.markdown("---")
+st.markdown("### 🎯 Pregunta Focal del Proyecto")
+
 st.markdown(
     """
-## 🧵 Mensaje de cierre para las directivas
+    <div style="
+        background:#0f172a; 
+        padding:22px 26px; 
+        border-radius:14px; 
+        border:1px solid #1e293b;
+        font-size:19px; 
+        color:#e2e8f0;">
+        <b>¿Qué programas y asignaturas presentan mayor deserción, reprobación o cancelación 
+        y cuáles son los factores asociados a ese comportamiento?</b>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-- El dashboard integra de forma coherente **matrículas, docencia y soporte**, lo que permite pasar de mirar solo cifras sueltas a entender la **experiencia completa del estudiante virtual**.
-- A partir de los hallazgos, la UEV puede:
-  - Priorizar **programas y asignaturas** con mayor riesgo de deserción.
-  - Revisar la **distribución de grupos y carga docente**.
-  - Fortalecer los **canales de soporte** que presenten mayores tiempos de respuesta.
-- El objetivo final es que este tablero no sea solo un informe de cierre, sino una **herramienta viva de monitoreo y toma de decisiones** para mejorar la permanencia y el éxito académico en la educación virtual.
-"""
+
+# ================== CONCLUSIONES PRINCIPALES ==================
+st.markdown("---")
+st.subheader("📌 Conclusiones Principales")
+
+st.markdown(
+    """
+    A partir de la integración y análisis de las tres fuentes de información (matrículas, docentes y soporte), 
+    se destacan las siguientes conclusiones clave:
+    """
+)
+
+st.markdown(
+    """
+    #### 1️⃣ Programas con mayor nivel de riesgo académico
+    - Se identifican programas con **tasas elevadas de cancelación y reprobación**, lo que evidencia una 
+      necesidad urgente de acompañamiento académico.
+    - Estos programas comparten características como **altos tamaños de grupo**, cursos con baja nota promedio 
+      y estudiantes con mayores dificultades para sostener la continuidad.
+
+    #### 2️⃣ El tamaño de grupo influye en el rendimiento
+    - En los cursos con grupos más numerosos, se observa una **tendencia a un menor promedio de notas**.
+    - Este patrón sugiere que la carga docente y la dinámica de grupos grandes pueden estar afectando 
+      la calidad del acompañamiento académico.
+
+    #### 3️⃣ Diferencias significativas en el desempeño docente
+    - Algunos docentes presentan **tasas más altas de reprobación**, lo cual no necesariamente implica 
+      mal desempeño, sino que puede relacionarse con:
+        - complejidad de contenidos,
+        - perfiles de estudiantes,
+        - saturación de carga académica.
+    - Este grupo debe recibir **acompañamiento pedagógico focalizado**.
+
+    #### 4️⃣ El soporte atiende principalmente problemas de tipo académico y acceso
+    - Los motivos más frecuentes están relacionados con:
+        - dificultades académicas,
+        - problemas personales,
+        - accesos a plataforma.
+    - Esto indica que el soporte está absorbiendo parte del impacto de la **experiencia estudiantil virtual**.
+
+    #### 5️⃣ Los tiempos de respuesta NO muestran una relación directa con la deserción
+    - No se observa una correlación evidente entre los **tiempos de respuesta del soporte** y la 
+      **tasa de deserción**.
+    - Esto sugiere que la deserción está mucho más vinculada a **factores académicos** que a factores técnicos.
+
+    #### 6️⃣ Las regiones con menor satisfacción requieren intervención
+    - Algunas regiones presentan niveles de satisfacción por debajo del promedio, indicando posibles 
+      brechas de infraestructura o de acompañamiento institucional.
+    """
+)
+
+
+# ================== RECOMENDACIONES ==================
+st.markdown("---")
+st.subheader("🧭 Recomendaciones Estratégicas para la UEV – ITM")
+
+st.markdown(
+    """
+    Basados en los hallazgos obtenidos, DATA DAMZ SAS propone las siguientes líneas de acción estratégicas:
+
+    ### 🟦 1. Fortalecer los programas con alto riesgo académico
+    - Implementar tutorías de refuerzo y acompañamiento personalizado.
+    - Revisar mallas curriculares y metodologías de evaluación.
+    - Reducir el número de estudiantes por curso cuando sea posible.
+
+    ### 🟦 2. Capacitar y acompañar a docentes con mayor carga o complejidad en sus cursos
+    - Ofrecer talleres de metodologías activas y estrategias para grupos grandes.
+    - Monitorear sistemáticamente métricas de rendimiento docente.
+
+    ### 🟦 3. Optimizar la gestión de soporte estudiantil
+    - Crear rutas rápidas de solución para los motivos más frecuentes.
+    - Fortalecer guías de autoayuda y contenido educativo preventivo.
+    - Implementar un sistema de priorización inteligente según el tipo de caso.
+
+    ### 🟦 4. Mejorar la experiencia virtual en regiones con menor satisfacción
+    - Incrementar disponibilidad de personal en horarios de alta demanda.
+    - Evaluar infraestructura tecnológica por región.
+
+    ### 🟦 5. Profundizar en el seguimiento longitudinal del estudiante
+    - Integrar analítica predictiva para identificar estudiantes en riesgo antes de que cancelen.
+    - Conectar datos de matrícula, interacción en plataforma y soporte para una visión 360° del estudiante.
+    """
 )

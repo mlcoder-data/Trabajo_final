@@ -1,6 +1,38 @@
 import streamlit as st
 import pandas as pd
 
+# ================== HEADER CORPORATIVO ==================
+def header_data_damz():
+    header_html = (
+        '<div style="background: linear-gradient(90deg,#0f172a,#1e293b,#1e3a5f);'
+        'padding: 26px 32px; border-radius: 0 0 22px 22px; border-bottom: 1px solid #111827;'
+        'margin-bottom: 38px; display:flex; justify-content:space-between; align-items:center;'
+        'box-shadow: 0 12px 28px rgba(0,0,0,0.35);">'
+            '<div style="flex:1;">'
+                '<div style="font-size:28px; font-weight:900; letter-spacing:0.08em; '
+                'text-transform:uppercase; color:#bfdbfe;">'
+                    'DATA DAMZ SAS'
+                '</div>'
+                '<div style="font-size:18px; color:#e5e7eb; margin-top:6px; font-weight:300;">'
+                    'Transformamos datos en decisiones para la educación virtual.'
+                '</div>'
+            '</div>'
+            '<div style="flex:1; text-align:right;">'
+                '<div style="font-size:17px; color:#cbd5e1; font-weight:400;">'
+                    'Proyecto analítico · Unidad de Educación Virtual – ITM'
+                '</div>'
+                '<div style="font-size:16px; color:#94a3b8; margin-top:4px;">'
+                    'Periodo de análisis: <b>2024-1 y 2024-2</b>'
+                '</div>'
+            '</div>'
+        '</div>'
+    )
+    st.markdown(header_html, unsafe_allow_html=True)
+
+header_data_damz()
+
+# ================== TÍTULO PRINCIPAL ==================
+
 st.title("📌 Descripción general")
 
 @st.cache_data
